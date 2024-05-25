@@ -71,3 +71,5 @@ TDD开发过程：非常短的一种重复开发周期，将需求转化为测�
 ❓会有哪些bug：程序行为在边界可能会突变；某些是特殊情况，需要通过防御等特殊处理
 🌰如何分析边界：给出两个例子![image.png](https://s2.loli.net/2024/05/25/v2yrSQmTe7soi9J.png)
 ![image.png](https://s2.loli.net/2024/05/25/ul61L8tsderOmUH.png)
+#### 两种方法
+1. 笛卡尔积：
