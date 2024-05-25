@@ -10,5 +10,6 @@
 3. 有最佳特性
 4. 别太复杂也别太简单
 ## 测试等级
+回归测试分为三类
 ![image.png](https://s2.loli.net/2024/05/25/bOkzoa51PhlgEtR.png)
- 
+## 一些概念
