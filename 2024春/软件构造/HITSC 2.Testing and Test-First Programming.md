@@ -110,5 +110,5 @@ public class Division {
         - 确保条件 `denominator == 0` 为false。
     - 测试用例2：`divide(4, 0)`，预期结果：抛出 `IllegalArgumentException`
         - 确保条件 `denominator == 0` 为true。
-# 
-
+# 测试覆盖度
+代码覆盖度：已有的测试用例有多大程度覆盖了被测程序
