@@ -77,4 +77,16 @@ TDD开发过程：非常短的一种重复开发周期，将需求转化为测�
 🌰例子，一个测试用例能做到覆盖多个维度的测试，并且不需要重复![image.png](https://s2.loli.net/2024/05/25/BjOlEJysPecaoiZ.png)
 # 白盒测试
 与黑盒不同，要考虑内部实现细节，需要根据**程序执行路径**来设计测试用例
-❓我的理解，根据程序代码运行时可能走过的所有路径进行测试，比如进入或不进入循环/if，是否抛出异常
+❓我的理解，根据程序代码运行时可能走过的所有路径进行测试，比如进入或不进入循环/if，是否抛出异常，为每种路径至少覆盖一次
+🌰例子
+```Java
+public class Division {
+    public int divide(int numerator, int denominator) {
+        if (denominator == 0) {
+            throw new IllegalArgumentException("Denominator cannot be zero");
+        }
+        return numerator / denominator;
+    }
+}
+```
+
