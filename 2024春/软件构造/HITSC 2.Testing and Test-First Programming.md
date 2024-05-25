@@ -52,4 +52,5 @@ TDD开发过程：非常短的一种重复开发周期，将需求转化为测�
 ![image.png](https://s2.loli.net/2024/05/25/nEiHwG5vhxb6qga.png)
 # Junit
 ## 一些用法
-1. @Test
+1. `@Test`注解，用于引入Junit
+2. 一些assertion方法，`assertEquals(2,Math.max`
