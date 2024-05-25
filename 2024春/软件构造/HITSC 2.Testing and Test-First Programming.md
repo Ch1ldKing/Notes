@@ -89,26 +89,23 @@ public class Division {
     }
 }
 ```
-> 覆盖如下： 1. **语句覆盖**：
-    
+覆盖如下：
+1. **语句覆盖**：
     - 测试用例1：`divide(4, 2)`，预期结果：`2`
         - 覆盖语句：`if (denominator == 0)` (false) 和 `return numerator / denominator;`
     - 测试用例2：`divide(4, 0)`，预期结果：抛出 `IllegalArgumentException`
         - 覆盖语句：`if (denominator == 0)` (true) 和 `throw new IllegalArgumentException("Denominator cannot be zero");`
 2. **分支覆盖**：
-    
     - 测试用例1：`divide(4, 2)`，预期结果：`2`
         - 覆盖 `if (denominator == 0)` 的false分支。
     - 测试用例2：`divide(4, 0)`，预期结果：抛出 `IllegalArgumentException`
         - 覆盖 `if (denominator == 0)` 的true分支。
 3. **路径覆盖**：
-    
     - 测试用例1：`divide(4, 2)`，预期结果：`2`
         - 覆盖路径：进入方法 -> `if`条件为false -> 执行除法并返回。
     - 测试用例2：`divide(4, 0)`，预期结果：抛出 `IllegalArgumentException`
         - 覆盖路径：进入方法 -> `if`条件为true -> 抛出异常。
 4. **条件覆盖**：
-    
     - 测试用例1：`divide(4, 2)`，预期结果：`2`
         - 确保条件 `denominator == 0` 为false。
     - 测试用例2：`divide(4, 0)`，预期结果：抛出 `IllegalArgumentException`
