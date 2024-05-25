@@ -53,4 +53,5 @@ TDD开发过程：非常短的一种重复开发周期，将需求转化为测�
 # Junit
 ## 一些用法
 1. `@Test`注解，用于引入Junit
-2. 一些assertion方法，`assertEquals(`expected:`2,`actual:`Math.max(1,2))`,`assertTrue`,`assertFalse`deng
+2. 一些assertion方法，`assertEquals(`expected:`2,`actual:`Math.max(1,2))`,`assertTrue`,`assertFalse`等
+3. `@Before`或`setUp()`在测试前进行初始化（如一些类的引入和）
