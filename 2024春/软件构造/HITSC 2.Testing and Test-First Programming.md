@@ -37,3 +37,4 @@
 写测试用例就是找出spec的bug
 😀好处？<mark style="background: #BBFABBA6;">节省大量的debug时间</mark>
 ## 测试驱动的开发TDD
+TDD开发过程：非常短的一种重复开发周期，将需求转化为测试用例
