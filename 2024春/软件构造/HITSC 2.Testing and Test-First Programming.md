@@ -72,4 +72,5 @@ TDD开发过程：非常短的一种重复开发周期，将需求转化为测�
 🌰如何分析边界：给出两个例子![image.png](https://s2.loli.net/2024/05/25/v2yrSQmTe7soi9J.png)
 ![image.png](https://s2.loli.net/2024/05/25/ul61L8tsderOmUH.png)
 #### 两种方法
-1. 笛卡尔积：
+1. 笛卡尔积：每个维度的每个取值，都要相乘组合。比如Test1
+2. 覆盖每个取值：每个维度的每个取值只需被一个测试用例
