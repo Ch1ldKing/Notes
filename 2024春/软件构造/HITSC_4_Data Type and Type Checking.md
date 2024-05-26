@@ -28,4 +28,7 @@ found: int
 required: java.lang.String
 String five = 5;
 ```
-👍静态类型检查在编译阶段就发现错误，避免将bugdai'ru
+### 静态类型检查
+👍静态类型检查在编译阶段就发现错误，避免将bug带入运行阶段，提高正确性健壮性
+❓检查些啥
++ 
