@@ -11,4 +11,4 @@
 瀑布串行，容易适应需求增加
 ![image.png](https://s2.loli.net/2024/05/26/85enyImTOWbNP7S.png)
 ## V模型
-左侧开发，
+左侧开发，右侧测试，并行进行，
