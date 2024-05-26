@@ -22,5 +22,9 @@ String，Integer等
 String five = 5; // ERROR!
 ```
 ```
-
+ERROR:
+test.java.2: incompatible types 
+found: int
+required: java.lang.String
+String five = 5;
 ```
