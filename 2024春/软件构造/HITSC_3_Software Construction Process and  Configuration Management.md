@@ -78,5 +78,9 @@ commit中有作者等信息，且其指向一颗树，树中有指向文件的�
 git fetch可获取远程分支的变化，并选择是否与本地分支进行合并
 git merge可以合并两个分支，并在合并前进行代码审查
 ## 合作
-Fork和pull request 使用户之间可以向其他人仓库提交修改申请，以实现多人合作。每个人dou
+Fork和pull request 使用户之间可以向其他人仓库提交修改申请，以实现多人合作。每个人都fork仓库并向总项目提交PR
+# 软件构造过程
+![Uploading file...c9zzx]()
+## Programming
+
 
