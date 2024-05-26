@@ -60,4 +60,9 @@ Distributed：仓库存储独立的服务器以及每个开发者的机器
 ![image.png](https://s2.loli.net/2024/05/26/djMsBo5pDywgYLu.png)
 同时包括远程仓库
 ## Node Tree
+图解：
++ 通常情况下，commit指向一个父亲
++ 多个commit指向同一个父亲，那么他们是多个分支
++ 
+![image.png](https://s2.loli.net/2024/05/26/drgNPEyUph69x8F.png)
 
