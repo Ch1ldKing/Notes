@@ -63,7 +63,7 @@ String five = 5;
 1. 最少化拷贝以提高效率
 2. 使用可变数据类型，可获得更好的性能
 3. 适合于在多个模块之间共享数据
-**安全性**：![image.png](https://s2.loli.net/2024/05/27/uyPBLNFAeSdGf4Y.png)
+**安全性**：![image.png](https://s2.loli.net/2024/05/27/uyPBLNFAeSdGf4Y.png)当采用ke'bian
 
 ### final
 😀所以引入final，不能改变指向关系。如果这是不变数据类型，则添加final的字段的值更改会报错。
