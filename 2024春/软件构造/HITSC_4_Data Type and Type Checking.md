@@ -73,5 +73,8 @@ String five = 5;
 
 不变引用：变量与内存空间的关联关系不可修改
 可变引用：可以修改
-### 安全性：![image.png](https://s2.loli.net/2024/05/27/uyPBLNFAeSdGf4Y.png)当采用可变类型时（本例子为List），myData传入`sumAbsolute()`时被改变，因此导致两个输出值一样
+### 安全性：
+![image.png](https://s2.loli.net/2024/05/27/uyPBLNFAeSdGf4Y.png)当采用可变类型时（本例子为List），myData传入`sumAbsolute()`时被改变，因此导致两个输出值一样
 这种错误难以追踪，难以理解。
+#### 防御式拷贝
+将可变类型拷贝到一个新对象中，返回给客户端
