@@ -5,3 +5,4 @@
 没啥好说的
 ## 对象数据类型
 String，Integer等
+区别![image.png](https://s2.loli.net/2024/05/26/9EFUAtrvbKayho3.png)
