@@ -75,5 +75,7 @@ commit中有作者等信息，且其指向一颗树，树中有指向文件的�
 存储的是文件，不只是代码行，无需在回滚提交时大量进行修改操作，节省时间
 ![image.png](https://s2.loli.net/2024/05/26/mZrnhOfUJIpMsAv.png)
 ## Merge
-git fetch可huo'qu
+git fetch可获取远程分支的变化，并选择是否与本地分支进行合并
+git merge可以合并两个分支，并在合并前进行代码审查
+
 
