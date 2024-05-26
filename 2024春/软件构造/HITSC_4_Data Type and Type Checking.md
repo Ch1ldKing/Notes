@@ -135,5 +135,6 @@ for (String key : turtles.keySet()) {
 ```
 
 迭代器可能产生破坏
+![image.png](https://s2.loli.net/2024/05/27/kcKGSZ6yqLVhXj2.png)
 ![image.png](https://s2.loli.net/2024/05/27/A3WCk9u67QGodTX.png)
 
