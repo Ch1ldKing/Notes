@@ -55,4 +55,5 @@ Distributed：仓库存储独立的服务器以及每个开发者的机器
 ![image.png](https://s2.loli.net/2024/05/26/XABbEj7v5LnIsw6.png)
 # Git
 ## 仓库
-本地git仓库、工作目录（就是本地的文件系统）、暂存区（隔离工作目录与Git仓库）d
+本地git仓库、工作目录（就是本地的文件系统）、暂存区（隔离工作目录与Git仓库）
+之间的三种行为：修改、暂存、提交![image.png](https://s2.loli.net/2024/05/26/9Yd1bSBOrjCFfGW.png)
