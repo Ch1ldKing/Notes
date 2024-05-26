@@ -7,6 +7,7 @@
 String，Integer等
 区别![image.png](https://s2.loli.net/2024/05/26/9EFUAtrvbKayho3.png)
 ### Boxed primitives
-将基本类型**包装**为对象类型，但不常用，通常是为了集合类er
+将基本类型**包装**为对象类型，但不常用，通常是为了集合类而用
 ### 层次结构
-对象结构有extends（继承）等关系
+对象结构有extends（继承）等关系、
+### 操作符
