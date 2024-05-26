@@ -18,4 +18,6 @@
 ## 原型过程
 开发原型，不断迭代，用户试用评审，反馈修改，直到用户满意![image.png](https://s2.loli.net/2024/05/26/6eKFw8vDQYRS2fm.png)
 ## 螺旋模型
-多轮迭代，每一代瀑布，每yi'l
+多轮迭代，每一轮是瀑布，每一轮都有目标，迭代时严格验证![image.png](https://s2.loli.net/2024/05/26/LZm9DxgtYB6npyQ.png)
+# 敏捷开发
+快速迭代和小规模改进
