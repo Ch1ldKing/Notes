@@ -12,5 +12,7 @@ String，Integer等
 对象结构有extends（继承）等关系
 ### 操作
 既可以是普通的运算符，也可以是Object对象的方法或函数，比如`bigint1.add(bigint2)`add()是一个方法
+# Static vs. dynamic data type checking
 ## 类型检查
-静态在编译阶段jin'xing
+检查
+静态在编译阶段进行类型检查
