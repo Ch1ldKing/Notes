@@ -133,3 +133,7 @@ for (String key : turtles.keySet()) {
     System.out.println(key + ": " + turtles.get(key));
 }
 ```
+
+迭代器可能产生破坏
+![Uploading file...wz670]()
+![Uploading file...nrryx]()
