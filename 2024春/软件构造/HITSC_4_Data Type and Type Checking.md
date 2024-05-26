@@ -83,5 +83,7 @@ String five = 5;
 # Snapshot
 描述程序运行时的内部状态，解释设计思路
 ## 基本类型
+⚠️upload failed, check dev console
+## 对象类型
 
 
