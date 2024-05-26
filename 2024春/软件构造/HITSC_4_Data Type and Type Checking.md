@@ -57,6 +57,9 @@ String five = 5;
 ![image.png](https://s2.loli.net/2024/05/27/NlkCZeqhbaDjX5B.png)
 不同的是StringBuilder，他可以修改内存空间里的值![](https://s2.loli.net/2024/05/27/zPJxpsVTHjo6iWZ.png)
 ❓有什么区别？值不是一样吗？有多个变量引用同一个内存空间的时候，会出现不同：![](https://s2.loli.net/2024/05/27/kl4XEjMsmxDT3u6.png)
+#### 优劣
+不可变类型虽然保证安全和设计，但对其频繁修改会产生大量的临时拷贝(需要垃圾回收)
+可变类型最少化拷贝以提高效率
 ### final
 😀所以引入final，不能改变指向关系。如果这是不变数据类型，则添加final的字段的值更改会报错。
 因此，尽量使用final来作为方法的输入参数和局部变量，表明了这个值不会被更改
