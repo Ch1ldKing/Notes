@@ -71,7 +71,7 @@ Distributed：仓库存储独立的服务器以及每个开发者的机器
 commit中有作者等信息，且其指向一颗树，树中有指向文件的指针，如果未发生变化，则不需要重复存储这两个版本的文件
 ![image.png](https://s2.loli.net/2024/05/26/N1LJvCnOPzqdVKw.png)
 ## Git优点
-存储的是文件，不只是代码行
+存储的是文件，不只是代码行，无需在回滚提交时大量进行修改操作，节省时间
 ![image.png](https://s2.loli.net/2024/05/26/mZrnhOfUJIpMsAv.png)
 
 
