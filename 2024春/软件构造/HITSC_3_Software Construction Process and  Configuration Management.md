@@ -67,4 +67,8 @@ Distributed：仓库存储独立的服务器以及每个开发者的机器
 + HEAD是当前的commit源
 + branch是分支名字
 ![image.png](https://s2.loli.net/2024/05/26/drgNPEyUph69x8F.png)
+## commit
+commit中有作者等信息，且其指向一颗树，树中有指向文件的指针，如果未发生变化，ze'bu'xu'ya
+![image.png](https://s2.loli.net/2024/05/26/N1LJvCnOPzqdVKw.png)
+
 
