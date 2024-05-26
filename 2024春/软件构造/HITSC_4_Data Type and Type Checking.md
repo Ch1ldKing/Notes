@@ -92,3 +92,4 @@ String five = 5;
 例子：没有final，因此s2=s1.concat 指向了abcde
 ![image.png](https://s2.loli.net/2024/05/27/Hu5ZA6yBTNorh8z.png)
 
+# 复杂数据类型：集合和数组
