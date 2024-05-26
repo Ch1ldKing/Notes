@@ -113,3 +113,23 @@ max = Math.max(x, max);
 key唯一，值可以重复，也是无序
 ![image.png](https://s2.loli.net/2024/05/27/vQkdZrjFxEloiSm.png)
 Set和Map同样使用迭代器进行迭代
+```Java
+List<String> cities        
+= new ArrayList<>();
+Set<Integer> numbers 
+= new HashSet<>();
+Map<String,Turtle> turtles 
+= new HashMap<>();
+for (String city : cities) {
+    System.out.println(city);
+}
+for (int num : numbers) {
+    System.out.println(num);
+}
+for (int ii = 0; ii < cities.size(); ii++) {
+    System.out.println(cities.get(ii));
+}
+for (String key : turtles.keySet()) {
+    System.out.println(key + ": " + turtles.get(key));
+}
+```
