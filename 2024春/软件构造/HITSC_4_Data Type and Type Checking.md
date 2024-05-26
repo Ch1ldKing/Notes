@@ -60,3 +60,4 @@ String five = 5;
 因此，尽量使用final来作为方法的输入参数和局部变量，表明了这个值不会被更改
 📕final类无法派生子类，final变量不能改变值和引用（引用就是关联），final的方法不能被子类重写
 final与Immutability的区别
+![image.png](https://s2.loli.net/2024/05/27/YcBENxbAunW9wIo.png)
