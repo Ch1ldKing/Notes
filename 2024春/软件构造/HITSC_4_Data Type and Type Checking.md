@@ -93,6 +93,7 @@ String five = 5;
 ![image.png](https://s2.loli.net/2024/05/27/Hu5ZA6yBTNorh8z.png)
 
 # 复杂数据类型：集合、数组、链表
+只能用于Object
 数组和链表不用说，但**迭代器**可以说
 ```Java
 //array
