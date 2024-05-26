@@ -28,3 +28,4 @@ found: int
 required: java.lang.String
 String five = 5;
 ```
+👍静态类型检查在编译阶段就发现错误，避免将bugdai'ru
