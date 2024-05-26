@@ -80,7 +80,7 @@ git merge可以合并两个分支，并在合并前进行代码审查
 ## 合作
 Fork和pull request 使用户之间可以向其他人仓库提交修改申请，以实现多人合作。每个人都fork仓库并向总项目提交PR
 # 软件构造过程
-![Uploading file...c9zzx]()
+![image.png](https://s2.loli.net/2024/05/26/u1qKpT2CkZlt3Uw.png)
 ## Programming
 
 
