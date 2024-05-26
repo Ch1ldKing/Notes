@@ -53,3 +53,5 @@ String five = 5;
 ## Immutability
 一种重要的设计原则：不变性
 不变数据类型：一旦被创建，其值不能改变
+🌰例子：其实z
+![image.png](https://s2.loli.net/2024/05/27/NlkCZeqhbaDjX5B.png)
