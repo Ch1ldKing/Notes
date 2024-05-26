@@ -83,7 +83,8 @@ String five = 5;
 # Snapshot
 描述程序运行时的内部状态，解释设计思路
 ## 基本类型
-⚠️upload failed, check dev console
+![](https://s2.loli.net/2024/05/27/y5bJwRNu6jkGIcf.png)
 ## 对象类型
+![image.png](https://s2.loli.net/2024/05/27/ltjeHRFndLamfUW.png)
 
 
