@@ -93,4 +93,15 @@ String five = 5;
 ![image.png](https://s2.loli.net/2024/05/27/Hu5ZA6yBTNorh8z.png)
 
 # 复杂数据类型：集合、数组、链表
-数组和链表不用说，但die'dai'qi可以说
+数组和链表不用说，但**迭代器**可以说
+```Java
+int max = 0;
+for (int i=0; i<array.length; i++) {
+max = Math.max(array[i], max);
+}
+
+int max = 0;
+for (int x : list) {
+max = Math.max(x, max);
+}
+```
