@@ -85,11 +85,11 @@ Fork和pull request 使用户之间可以向其他人仓库提交修改申请，
 语言种类：
 从用途上划分
 + Programming languages (e.g., C, C++, Java, Python)编程语言
-–Modeling languages (e.g., UML) 建模语言
-– Configuration languages (e.g., XML) 配置语言
-– Build languages (e.g., XML) 构建语言
++ Modeling languages (e.g., UML) 建模语言
++ Configuration languages (e.g., XML) 配置语言
++ Build languages (e.g., XML) 构建语言
 从形态上划分
-– Linguistic-based 基于语言学的构造语言
-–Mathematics-based (formal) 基于数学的形式化构造语言
-– Graphics-based (visual) 基于图形的可视化构造语言
++ Linguistic-based 基于语言学的构造语言
++ Mathematics-based (formal) 基于数学的形式化构造语言
++ Graphics-based (visual) 基于图形的可视化构造语言
 
