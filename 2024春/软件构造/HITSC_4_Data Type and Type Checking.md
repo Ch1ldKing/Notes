@@ -107,4 +107,5 @@ max = Math.max(x, max);
 }
 ```
 ## Set集合
-无序的
+无序的，但同一个object不能重复出现。![image.png](https://s2.loli.net/2024/05/27/63x5mGcaSoMTAsJ.png)
+## Map
