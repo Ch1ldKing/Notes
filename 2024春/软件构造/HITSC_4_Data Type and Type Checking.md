@@ -61,5 +61,8 @@ String five = 5;
 📕final类无法派生子类，final变量不能改变值和引用（引用就是关联），final的方法不能被子类重写
 #### final与Immutability的区别
 不变对象：指向值不能被修改
-可变对象：<mark style="background: #BBFABBA6;">有方法时</mark>可以修改指向的值
+可变对象：**有方法时**可以修改指向的值
+
+不变引用：变量与内存空间的关联关系不可修改
+可变引用：可以修改
 
