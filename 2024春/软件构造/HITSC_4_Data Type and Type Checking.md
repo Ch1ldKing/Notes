@@ -15,5 +15,5 @@ String，Integer等
 # Static vs. dynamic data type checking
 ## 类型检查
 检查数据类型和值是否符合
-+ 静态在编译阶段进行类型检查
-+ 动态类型
++ 静态类型在编译阶段进行类型检查
++ 动态类型在运行阶段进行类型检查
