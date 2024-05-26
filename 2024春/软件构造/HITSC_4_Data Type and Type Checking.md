@@ -89,6 +89,6 @@ String five = 5;
 不可变对象，用**双线椭圆**![image.png](https://s2.loli.net/2024/05/27/nuNo4mjD18wrFCQ.png)
 不可变引用final，用双线箭头
 ![](https://s2.loli.net/2024/05/27/WebYA8pDVaZSkhr.png)
-例子：
-![Uploading file...nvrgs]()
+例子：没有final，因此s2=s1.concat zhi'xiang'le
+![image.png](https://s2.loli.net/2024/05/27/Hu5ZA6yBTNorh8z.png)
 
