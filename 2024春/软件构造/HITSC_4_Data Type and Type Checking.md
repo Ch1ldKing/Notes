@@ -95,13 +95,16 @@ String five = 5;
 # 复杂数据类型：集合、数组、链表
 数组和链表不用说，但**迭代器**可以说
 ```Java
+//array
 int max = 0;
 for (int i=0; i<array.length; i++) {
 max = Math.max(array[i], max);
 }
-
+//list
 int max = 0;
 for (int x : list) {
 max = Math.max(x, max);
 }
 ```
+## Set集合
+无序的
