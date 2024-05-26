@@ -50,4 +50,7 @@ CMDB配置管理数据库：存储软件配置项变化信息和基线
 + HEAD：当前工作的版本
 #### VCS
 Local：本地的，不能共享协作
-Centralized：集中式版本控制系统
+Centralized：仓库存储在独立服务器
+Distributed：仓库存储独立的服务器以及每个开发者的机器
+![image.png](https://s2.loli.net/2024/05/26/XABbEj7v5LnIsw6.png)
+# Git
