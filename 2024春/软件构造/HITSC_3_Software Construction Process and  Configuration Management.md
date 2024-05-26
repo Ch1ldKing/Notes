@@ -31,4 +31,4 @@
 4. **响应变化胜过遵循计划**（Responding to change over following a plan）：
     - 强调能够灵活应对变化的能力，而不是严格按照预先制定的计划执行。
 📕重点：用户参与，小步骤迭代，确认验证
-
+😀一些理念：结对编程，CI持续集成，taskbord与用户
