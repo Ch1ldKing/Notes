@@ -112,3 +112,4 @@ max = Math.max(x, max);
 ## Map词典
 key唯一，值可以重复，也是无序
 ![image.png](https://s2.loli.net/2024/05/27/vQkdZrjFxEloiSm.png)
+Set和Map同样使用迭代器进行迭代
