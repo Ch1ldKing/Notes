@@ -86,5 +86,4 @@ String five = 5;
 ![](https://s2.loli.net/2024/05/27/y5bJwRNu6jkGIcf.png)
 ## 对象类型
 ![image.png](https://s2.loli.net/2024/05/27/ltjeHRFndLamfUW.png)
-
-
+不可变对象，用**双线椭圆**![image.png](https://s2.loli.net/2024/05/27/nuNo4mjD18wrFCQ.png)
