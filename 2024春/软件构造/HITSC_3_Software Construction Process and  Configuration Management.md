@@ -16,4 +16,6 @@
 缺点：顺序执行，难以应对需求变化，成本高
 ![image.png](https://s2.loli.net/2024/05/26/pIdgzAxEXi3kJQO.png)
 ## 原型过程
-开发原型，不断迭代，用户shi'yong'ping'shen直到用户满意
+开发原型，不断迭代，用户试用评审，反馈修改，直到用户满意![image.png](https://s2.loli.net/2024/05/26/6eKFw8vDQYRS2fm.png)
+## 螺旋模型
+多轮迭代，每一代瀑布，每yi'l
