@@ -22,3 +22,11 @@
 # 敏捷开发
 快速迭代和小规模改进，**Agile = 增量 + 迭代**
 敏捷宣言：
+1. **个体和互动胜过流程和工具**（Individuals and interactions over processes and tools）：
+    - 强调团队成员之间的合作和交流，而不是过度依赖于严格的流程和工具。
+2. **工作的软件胜过详尽的文档**（Working software over comprehensive documentation）：
+    - 重点是交付能够实际运行的软件，而不是花费大量时间编写和维护详细的文档。
+3. **客户合作胜过合同谈判**（Customer collaboration over contract negotiation）：
+    - 注重与客户的持续合作和沟通，而不是仅仅根据合同进行工作。
+4. **响应变化胜过遵循计划**（Responding to change over following a plan）：
+    - 强调能够灵活应对变化的能力，而不是严格按照预先制定的计划执行。
