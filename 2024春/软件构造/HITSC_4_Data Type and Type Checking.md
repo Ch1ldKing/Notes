@@ -55,7 +55,8 @@ String five = 5;
 不变数据类型：一旦被创建，其值不能改变
 🌰例子：其实最终，a对应的值是变成def了，但我们所说的不变是，“abc”在内存中的值不变化。只是把a指向def了
 ![image.png](https://s2.loli.net/2024/05/27/NlkCZeqhbaDjX5B.png)
-
+不同的是StringBuilder，他可以修改内存空间里的值![Uploading file...ke15b]()
+有什么区别
 ### final
 😀所以引入final，不能改变指向关系。如果这是不变数据类型，则添加final的字段的值更改会报错。
 因此，尽量使用final来作为方法的输入参数和局部变量，表明了这个值不会被更改
