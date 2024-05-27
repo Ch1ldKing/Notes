@@ -48,4 +48,4 @@ public static char[] getMitId(String username) throws NoSuchUserException {
     return id;
 }
 ```
-由于char\[\]可变，修改前五位会导致Map中的数据也被更改
+由于char\[\]可变，修改前五位会导致Map中的数据也被更改。所以最好采用String
