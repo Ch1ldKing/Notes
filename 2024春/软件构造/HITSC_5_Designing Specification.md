@@ -97,3 +97,5 @@ static V put(Map<K,V> map, K key, V val)
 */
 ```
 ### 3.足够强
+太弱的spec，client不放心、不敢用 (因为没有给出足够的承诺)。
+开发者应尽可能考虑各种特殊情况，在post-condition给出处理措施
