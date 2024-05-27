@@ -51,4 +51,4 @@ public static char[] getMitId(String username) throws NoSuchUserException {
 由于char\[\]可变，修改前五位会导致Map中的数据也被更改。所以最好采用String
 # 设计规约
 ## 对规约分类
-通过规约的确定性、cehn'shu'xing
+通过规约的<mark style="background: #BBFABBA6;">确定性、陈述性、和强度</mark>来判断“哪个更好”
