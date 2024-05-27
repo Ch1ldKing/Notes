@@ -82,6 +82,7 @@ void client3(Family f) {
 这么做有风险，有可能依赖的其他方法有错误导致测试结果失效
 🌰例子：测试策略
 ```java
+//测试构造器
 string = produced by valueOf();
-
+//测试
 ```
