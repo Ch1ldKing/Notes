@@ -110,3 +110,9 @@ effects: adds the elements of list2 to list1,
 这个没啥说的
 ### 5.使用抽象类型
 给方法实现体与客户端更大的自由度
+```java
+static ArrayList<T> reverse(ArrayList<T> list)
+effects: returns a new list which is the reversal of list, i.e.
+		newlist[i] == list[n-i-1]
+for all 0 <= i < n, where n = list.size()
+```
