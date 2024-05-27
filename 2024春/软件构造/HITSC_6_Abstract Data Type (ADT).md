@@ -47,7 +47,7 @@ void client1(Family f) {
     // ...
 }
 ```
-问题：直接暴露了people的内部，并且没有封装好。
+问题：直接暴露了people的内部，并且没有封装好。查询方法依赖于具体内部有多少个元素这类的实现细节
 ```Java
 改进RI
 /**
@@ -73,6 +73,6 @@ void client3(Family f) {
     // ...
 }
 ```
-1. 采用Set，防止成员重复，哦同时
+1. 采用Set，防止成员重复，同时改进了List的实现细节问题
 2. 通过getmembers来获取成员列表，而不是直接暴露内部people，防止修改
-3. 
+3. getMembersbu'zhi'jie
