@@ -106,3 +106,5 @@ effects: adds the elements of list2 to list1,
          unless it encounters a null element,
          at which point it throws a NullPointerException
 ```
+### 4.太强实现难度大
+zhe
