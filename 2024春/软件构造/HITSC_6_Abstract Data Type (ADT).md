@@ -100,5 +100,5 @@ substring():
 	start = 0, middle, len
 	end = 0, middle, len
 	end-start = 0, n
-	string = produced by valueOf(),
+	string = produced by valueOf(), produced by 
 ```
