@@ -77,4 +77,5 @@ void client3(Family f) {
 2. 通过getmembers来获取成员列表，而不是直接暴露内部people，防止修改
 3. getMembers不直接返回people，而是复制一个列表，防止表示暴露
 # 测试一个ADT
-1. 用observes测试creators、producers、
+1. 用observers测试creators、producers、mutators
+2. 调用 测试observers
