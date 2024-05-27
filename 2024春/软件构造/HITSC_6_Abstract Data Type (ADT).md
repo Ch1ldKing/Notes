@@ -83,6 +83,11 @@ void client3(Family f) {
 🌰例子：测试策略
 ```java
 //测试构造器
+valueOf():
 string = produced by valueOf();
-//测试
+//测试观察者
+length():
+string len = 0, 1, n;
+string = produced by valueOf(), produced by substring();
+
 ```
