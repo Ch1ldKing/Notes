@@ -64,3 +64,5 @@ public static char[] getMitId(String username) throws NoSuchUserException {
 ## 操作式/声明式规约
 操作式：例如伪代码，用它解释服务端实现的细节。但最好不要使用它，把实现细节放在实现体内部注释而不是规约中
 声明式：没有内部实现的描述，只有输入得到输出
+🌰例子：![image.png](https://s2.loli.net/2024/05/27/uCVDdlh7ESWUqiQ.png)
+第一个说了具体是怎么实现的，比如
