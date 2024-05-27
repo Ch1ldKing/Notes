@@ -78,4 +78,5 @@ void client3(Family f) {
 3. getMembers不直接返回people，而是复制一个列表，防止表示暴露
 # 测试一个ADT
 1. 用observers测试creators、producers、mutators
-2. 调用 测试observers
+2. 调用creators、producers、mutators等产生或修改结果来测试 observers
+这么做有风险，
