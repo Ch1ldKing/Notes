@@ -116,7 +116,8 @@ effects: returns a new list which is the reversal of list, i.e.
 		 newlist[i] == list[n-i-1]
 		 for all 0 <= i < n, where n = list.size()
 ```
-### 使用前置条件/后置条件
-❓是否使用前置条件：通常来说，使用方法检验前置条件，成本昂贵
+### 前置条件/后置条件
+❓是否检验前置条件：通常来说，使用方法检验前置条件，成本昂贵
 因此，通常选择使用前置条件，把责任交给client
 ❓减弱前置条件：客户端不喜欢太强的前置条件，因此通常是减弱，并用抛出异常来替代，并且要尽可能在错误根源处fail，避免错误扩散，难以定位
+❓
