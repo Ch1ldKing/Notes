@@ -87,4 +87,14 @@ public static String longestWord;
 public static void countLongWords(List<String> words) {}
 ```
 ### 2.信息丰富的
+不能引起客户端的歧义
+🌰例子：
+```
+static V put(Map<K,V> map, K key, V val)
+requires: val may be null, and map may contain null values
+effects: inserts (key, val) into the mapping,
+         overriding any existing mapping for key, and
+         returns old value for key, unless none,
+         in which case it returns null
 
+```
