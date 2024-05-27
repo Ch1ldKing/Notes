@@ -17,4 +17,7 @@
 ### 变值器
 如果返回值为void，则必然意味着它改变了对象的某些内部状态
 也有可能非空
-# Abstract Data Type
+# ADT举例
+![image.png](https://s2.loli.net/2024/05/27/Lxfc6sNFXORrZMC.png)
+# 设计ADT
+
