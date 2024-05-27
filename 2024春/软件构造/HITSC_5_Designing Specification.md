@@ -54,4 +54,7 @@ public static char[] getMitId(String username) throws NoSuchUserException {
 通过规约的<mark style="background: #BBFABBA6;">确定性、陈述性、和强度</mark>来判断“哪个更好”
 ### 强度
 前置条件更弱且后置条件更强
-也可能无法比较
+也可能无法比较：
++ 存在某些实现同时满足 𝑆1​ 和 𝑆3​，也存在某些实现只满足 𝑆1​ 或 𝑆3​
++ 没有实现同时满足两者
+
