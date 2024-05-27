@@ -103,4 +103,5 @@ substring():
 	end-start = 0, n
 	string = produced by valueOf(), produced by substring()
 ```
-在测试时，其实是组合起来
+在测试时，其实是组合起来测试的，能保证所有方法之间的交互，同时覆盖全面，如下，每种测试都采用了多种混合的方式![image.png](https://s2.loli.net/2024/05/28/HLDR9IFbWtXwvuT.png)
+# 不变量Invariants
