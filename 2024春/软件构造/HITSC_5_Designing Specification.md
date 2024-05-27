@@ -31,4 +31,20 @@ for (int i = 0; i < 5; ++i) {
 }
 System.out.println(id);
 ```
-服务端
+服务端担心效率，所以采用了cache全局可变变量(char\[\]可变)
+```Java
+private static Map<String, char[]> cache = new HashMap<String, char[]>();
+
+public static char[] getMitId(String username) throws NoSuchUserException {
+    // see if it's in the cache already
+    if (cache.containsKey(username)) {
+        return cache.get(username);
+    }
+
+    // ... look up username in MIT's database ...
+
+    // store it in the cache for future lookups
+    cache.put(username, id);
+    return id;
+}
+```
