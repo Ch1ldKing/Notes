@@ -28,3 +28,23 @@
 表示独立性：client使用ADT时无需考虑其内部如何实现，ADT内部表示的变化不应影响外部spec和客户端
 这意味着当我们对代码进行优化时，我们无需通知客户端也无需修改客户端代码，因为优化后仍然满足spec。这就是RI的作用
 🌰例子：
+```Java
+违反RI
+/**
+ * Represents a family that lives in a household together.
+ * A family always has at least one person in it.
+ * Families are mutable.
+ */
+class Family {
+    public List<Person> people;
+    public List<Person> getMembers() {
+        return people;
+    }
+}
+
+void client1(Family f) {
+    Person baby = f.people.get(f.people.size() - 1); // 直接访问内部表示，违反封装
+    // ...
+}
+```
+问题：直接暴露了people的内部，并且没有封装
