@@ -76,3 +76,4 @@ void client3(Family f) {
 1. 采用Set，防止成员重复，同时改进了List的实现细节问题
 2. 通过getmembers来获取成员列表，而不是直接暴露内部people，防止修改
 3. getMembers不直接返回people，而是复制一个列表，防止表示暴露
+# 测试一个ADT
