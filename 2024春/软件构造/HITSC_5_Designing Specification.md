@@ -57,4 +57,6 @@ public static char[] getMitId(String username) throws NoSuchUserException {
 也可能无法比较：
 + 存在某些实现同时满足 𝑆1​ 和 𝑆3​，也存在某些实现只满足 𝑆1​ 或 𝑆3​
 + 没有实现同时满足两者
-
+## 欠定/确定规约
+确定：给定一个满足precondition的输入，其输出是**唯一的、明确的**
+欠
