@@ -92,5 +92,6 @@ length():
 //测试观察者
 charAt():
 	string len = 1, n;
-	i = 0, 1, n - 1 
+	i = 0, 1, len - 1;
+	string = produced by valueOf(), produced by substring();
 ```
