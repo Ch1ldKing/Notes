@@ -67,4 +67,4 @@ public static char[] getMitId(String username) throws NoSuchUserException {
 🌰例子：![image.png](https://s2.loli.net/2024/05/27/uCVDdlh7ESWUqiQ.png)
 第一个说了传到一个新的类，但这是具体实现细节
 第二个说了遍历所有元素，这也是具体实现细节
-##
+## 图例规约
