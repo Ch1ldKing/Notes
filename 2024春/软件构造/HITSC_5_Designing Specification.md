@@ -88,7 +88,7 @@ public static void countLongWords(List<String> words) {}
 ```
 ### 2.信息丰富的
 不能引起客户端的歧义
-🌰例子：客户端不知道返回null是因为原来绑定的值是null，还是
+🌰例子：客户端不知道返回null是因为原来绑定的值是null，还是因为不存在旧值
 ```Java
 static V put(Map<K,V> map, K key, V val)
 /**
@@ -96,3 +96,4 @@ static V put(Map<K,V> map, K key, V val)
 * effects: 将`(key, val)`插入到映射中，如果存在相同的键，则覆盖旧值。返回该键的旧值，如果不存在旧值，则返回`null`
 */
 ```
+### 3.足够强
