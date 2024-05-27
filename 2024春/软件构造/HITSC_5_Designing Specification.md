@@ -117,5 +117,6 @@ effects: returns a new list which is the reversal of list, i.e.
 		 for all 0 <= i < n, where n = list.size()
 ```
 ### 优化前置条件/后置条件
-通常来说，使用方法检验前置条件，成本昂贵
+❓是否检验前置条件：通常来说，使用方法检验前置条件，成本昂贵
 因此，通常选择使用前置条件，把责任交给client
+❓jian
