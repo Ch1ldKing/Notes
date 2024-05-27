@@ -79,4 +79,4 @@ void client3(Family f) {
 # 测试一个ADT
 1. 用observers测试creators、producers、mutators
 2. 调用creators、producers、mutators等产生或修改结果来测试 observers
-这么做有风险，
+这么做有风险，有可能依赖的其他方法有错误导致测试结果失效
