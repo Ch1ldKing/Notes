@@ -84,6 +84,7 @@ void client3(Family f) {
 ```java
 //测试构造器
 valueOf():
+	true, false
 	string = produced by valueOf()
 //测试观察者
 length():
@@ -102,3 +103,4 @@ substring():
 	end-start = 0, n
 	string = produced by valueOf(), produced by substring()
 ```
+在测试时，其实是组合起来
