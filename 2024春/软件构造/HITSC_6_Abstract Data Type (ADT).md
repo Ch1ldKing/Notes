@@ -20,4 +20,6 @@
 # ADT举例
 ![image.png](https://s2.loli.net/2024/05/27/Lxfc6sNFXORrZMC.png)
 # 设计ADT
-
+设计好的ADT，靠“经验法则”，提供一组操作，设计其行为规约 spec
+1. 设计简洁、一致的操作
+2. 
