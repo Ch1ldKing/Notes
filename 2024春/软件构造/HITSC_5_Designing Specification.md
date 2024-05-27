@@ -99,10 +99,10 @@ static V put(Map<K,V> map, K key, V val)
 ### 3.足够强
 太弱的spec，client不放心、不敢用 (因为没有给出足够的承诺)。
 开发者应尽可能考虑各种特殊情况，在post-condition给出处理措施
+🌰例子：客户端在得到Exception的时候，不知道哪些元素被添加了，需要自己定位。应该完善exception
 ```Java
 static void addAll(List<T> list1, List<T> list2)
 effects: adds the elements of list2 to list1,
          unless it encounters a null element,
          at which point it throws a NullPointerException
-
 ```
