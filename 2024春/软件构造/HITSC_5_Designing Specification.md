@@ -116,3 +116,5 @@ effects: returns a new list which is the reversal of list, i.e.
 		 newlist[i] == list[n-i-1]
 		 for all 0 <= i < n, where n = list.size()
 ```
+### 是否检验前置条件
+通常来说，使用方法jian'yan
