@@ -68,4 +68,5 @@ public static char[] getMitId(String username) throws NoSuchUserException {
 第一个说了传到一个新的类，但这是具体实现细节
 第二个说了遍历所有元素，这也是具体实现细节
 ## 图例规约
-规约限定了范围，
+规约限定了范围，可选择落在规约中的任意具体实现![image.png](https://s2.loli.net/2024/05/27/dUwMg2x4pasChIn.png)
+更强的规约表示为更小的区域。比如更强的后置条件、更弱的前置条件都意味着实现的自由度geng'd
