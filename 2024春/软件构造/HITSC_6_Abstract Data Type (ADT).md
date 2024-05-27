@@ -94,5 +94,9 @@ charAt():
 	string len = 1, n;
 	i = 0, 1, len - 1;
 	string = produced by valueOf(), produced by substring();
-//测试she
+//测试生产者
+substring():
+	string len = 0, 1, n;
+	start = 0, middle, len;
+	end = 0,
 ```
