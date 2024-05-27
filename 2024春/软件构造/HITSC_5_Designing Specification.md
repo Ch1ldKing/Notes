@@ -74,3 +74,4 @@ public static char[] getMitId(String username) throws NoSuchUserException {
 好的方法：并非代码好，而是spec的设计，使client用着舒服，开发者编着舒服
 ### 1.内聚的
 Spec描述的方法应单一、简单、易理解
+分离：规约做了两件事，所以要分离开形成两个方法。可以使spec更容易理解，且更容易
