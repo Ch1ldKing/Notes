@@ -59,5 +59,6 @@ public static char[] getMitId(String username) throws NoSuchUserException {
 + 没有实现同时满足两者
 ## 欠定/确定规约
 确定：给定一个满足precondition的输入，其输出是**唯一的、明确的**
-欠定：同一个输入可以有多个合法输出，ye'yi
+欠定：同一个输入可以有多个合法输出，通常有确定的实现
 非确定：同一个输入，多次执行时得到的输出可能不同
+## 操作式/声明式规约
