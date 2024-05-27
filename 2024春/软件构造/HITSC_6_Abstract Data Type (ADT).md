@@ -84,19 +84,21 @@ void client3(Family f) {
 ```java
 //测试构造器
 valueOf():
-	string = produced by valueOf();
+	string = produced by valueOf()
 //测试观察者
 length():
-	string len = 0, 1, n;
-	string = produced by valueOf(), produced by substring();
+	string len = 0, 1, n
+	string = produced by valueOf(), produced by substring()
 //测试观察者
 charAt():
-	string len = 1, n;
-	i = 0, 1, len - 1;
-	string = produced by valueOf(), produced by substring();
+	string len = 1, n
+	i = 0, 1, len - 1
+	string = produced by valueOf(), produced by substring()
 //测试生产者
 substring():
-	string len = 0, 1, n;
-	start = 0, middle, len;
-	end = 0,
+	string len = 0, 1, n
+	start = 0, middle, len
+	end = 0, middle, len
+	end-start = 0, n
+	string = produced by valueOf(),
 ```
