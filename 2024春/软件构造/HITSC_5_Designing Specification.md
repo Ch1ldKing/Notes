@@ -108,4 +108,5 @@ effects: adds the elements of list2 to list1,
 ```
 ### 4.太强实现难度大
 这个没啥说的
-### 5.
+### 5.使用抽象类型
+给方法实现体与客户端更大的自由度
