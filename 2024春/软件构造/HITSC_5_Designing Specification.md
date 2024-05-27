@@ -71,3 +71,5 @@ public static char[] getMitId(String username) throws NoSuchUserException {
 规约限定了范围，可选择落在规约中的任意具体实现![image.png](https://s2.loli.net/2024/05/27/dUwMg2x4pasChIn.png)
 更强的规约表示为更小的区域。比如更强的后置条件、更弱的前置条件都意味着实现的自由度更低![image.png](https://s2.loli.net/2024/05/27/RxC4LrI6HmskEwD.png)
 ## 设计好的规约
+好的方法：并非代码好，而是spec的设计，使client用着舒服，开发者编着舒服
+### 1.
