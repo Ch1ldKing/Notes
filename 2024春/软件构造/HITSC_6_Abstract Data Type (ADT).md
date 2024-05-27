@@ -47,4 +47,30 @@ void client1(Family f) {
     // ...
 }
 ```
-问题：直接暴露了people的内部，并且没有封装
+问题：直接暴露了people的内部，并且没有封装好。
+```Java
+改进RI
+/**
+ * Represents a family that lives in a household together.
+ * A family always has at least one person in it.
+ * Families are mutable.
+ */
+class Family {
+    // 使用Set代替List，以避免重复元素
+    public Set<Person> people;
+
+    /**
+     * @return a list containing all the members of the family, with no duplicates.
+     */
+    public List<Person> getMembers() {
+        return new ArrayList<>(people);
+    }
+}
+
+void client3(Family f) {
+    // 通过getMembers方法获取成员列表，而不是直接访问内部表示
+    Person anybody = f.getMembers().get(0); 
+    // ...
+}
+```
+首先，采用S
