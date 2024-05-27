@@ -107,4 +107,5 @@ effects: adds the elements of list2 to list1,
          at which point it throws a NullPointerException
 ```
 ### 4.太强实现难度大
-zhe
+这个没啥说的
+### 
