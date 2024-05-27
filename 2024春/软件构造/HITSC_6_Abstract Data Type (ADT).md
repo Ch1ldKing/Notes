@@ -80,7 +80,7 @@ void client3(Family f) {
 1. 用observers测试creators、producers、mutators
 2. 调用creators、producers、mutators等产生或修改结果来测试 observers
 这么做有风险，有可能依赖的其他方法有错误导致测试结果失效
-🌰例子：测试策略
+🌰例子：测试策略：测试观察者时要调用所有的构造器和生产者
 ```java
 //测试构造器
 valueOf():
@@ -94,4 +94,5 @@ charAt():
 	string len = 1, n;
 	i = 0, 1, len - 1;
 	string = produced by valueOf(), produced by substring();
+//测试she
 ```
