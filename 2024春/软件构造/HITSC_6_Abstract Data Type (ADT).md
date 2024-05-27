@@ -110,4 +110,4 @@ substring():
 不能产生表示泄露
 用private 和final 进行修饰来实现一些变量不会被外部获取或修改
 🌰例子：比如这个，当设定timestamp为final时，![image.png](https://s2.loli.net/2024/05/28/Z9BshOIbWmlJAXF.png)
-d也指向了t的timestamp，则对tweet的timestamp产生了修改，导致biao'shi'xie'lo![image.png](https://s2.loli.net/2024/05/28/DdqjAX8PCyt7KU1.png)
+d也指向了t的timestamp，则对tweet的timestamp产生了修改，导致表示泄露，修改了不变量，导致Tweet不能保证它是不变量![image.png](https://s2.loli.net/2024/05/28/DdqjAX8PCyt7KU1.png)
