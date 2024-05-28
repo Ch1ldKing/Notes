@@ -280,3 +280,5 @@ class Difference {
 final变量不允许重引用；final方法不允许重写，final类不允许拓展继承
 #### Overriding
 完全相同的Signature，使用哪个运行时决定
+父类型三种情况：
+1. 被重写函数体不为空，da'duo
