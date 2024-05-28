@@ -248,7 +248,7 @@ void client3(Family f) {
 ### Object
 Object 由类组成，定义了方法和变量
 #### 静态方法与实例方法
-```
+```java
 class Difference {
     public static void main(String[] args) {
         display(); // 调用静态方法，无需对象
@@ -264,5 +264,6 @@ class Difference {
         System.out.println("Java is awesome.");
     }
 }
-
 ```
+### 接口 Interface
+接口与接口，接口与类之间可以继承和拓展
