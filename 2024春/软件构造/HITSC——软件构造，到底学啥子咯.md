@@ -242,3 +242,6 @@ void client3(Family f) {
 通过一个方法`checkRep()`来保证不变量任何时候都不会改变，所有可能改变rep的地方都要检查
 ### 咋测试ADT
 这就用到测试优先思想了，无论何时你要记得测试一段程序
+1. 用observers测试creators、producers、mutators
+2. 调用creators、producers、mutators等产生或修改结果来测试 observers
+## OOP设计理念
