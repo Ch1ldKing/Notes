@@ -245,3 +245,24 @@ void client3(Family f) {
 1. 用observers测试creators、producers、mutators
 2. 调用creators、producers、mutators等产生或修改结果来测试 observers
 ## OOP设计理念
+### Object
+Object 由类组成，定义了方法和变量
+#### 静态方法与实例方法
+```
+class Difference {
+    public static void main(String[] args) {
+        display(); // 调用静态方法，无需对象
+        Difference t = new Difference();
+        t.show(); // 调用实例方法，需要对象
+    }
+
+    static void display() {
+        System.out.println("Programming is amazing.");
+    }
+
+    void show() {
+        System.out.println("Java is awesome.");
+    }
+}
+
+```
