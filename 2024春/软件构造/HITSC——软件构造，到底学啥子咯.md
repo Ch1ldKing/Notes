@@ -268,4 +268,4 @@ class Difference {
 ### 接口 Interface
 接口与接口，接口与类之间可以继承和拓展
 ![](https://s2.loli.net/2024/05/28/KZsRqFWpyzvXwNJ.png)
-接口中  
+接口中 
