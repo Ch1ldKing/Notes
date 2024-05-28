@@ -177,4 +177,55 @@ ADT是由操作定义的，与其内部如何实现无关
 ### 咋设计 ADT
 #### 简洁一致
 #### 表示独立性
-能够实现不论服务端代码如何gai'bi
+能够实现不论服务端代码如何改变 ADT 的内部具体实现，客户端对于ADT的使用不会变，仍然满足 spec，也就是 ADT 的**本质**没有变
+🌰例子：
+```Java
+违反RI
+/**
+ * Represents a family that lives in a household together.
+ * A family always has at least one person in it.
+ * Families are mutable.
+ */
+class Family {
+    public List<Person> people;
+    public List<Person> getMembers() {
+        return people;
+    }
+}
+
+void client1(Family f) {
+    Person baby = f.people.get(f.people.size() - 1); // 直接访问内部表示，违反封装
+    // ...
+}
+```
+问题：直接暴露了people的内部，并且没有封装好。查询方法依赖于具体内部有多少个元素这类的实现细节
+```Java
+改进RI
+/**
+ * Represents a family that lives in a household together.
+ * A family always has at least one person in it.
+ * Families are mutable.
+ */
+class Family {
+    // 使用Set代替List，以避免重复元素
+    public Set<Person> people;
+
+    /**
+     * @return a list containing all the members of the family, with no duplicates.
+     */
+    public List<Person> getMembers() {
+        return new ArrayList<>(people);
+    }
+}
+
+void client3(Family f) {
+    // 通过getMembers方法获取成员列表，而不是直接访问内部表示
+    Person anybody = f.getMembers().get(0); 
+    // ...
+}
+```
+1. 采用Set，防止成员重复，同时改进了List的实现细节问题
+2. 通过getmembers来获取成员列表，而不是直接暴露内部people，防止修改
+3. getMembers不直接返回people，而是复制一个列表，防止表示暴露
+### 咋测试ADT
+这就用到测试优先思想了，无论何时ni'yao'ji'de
