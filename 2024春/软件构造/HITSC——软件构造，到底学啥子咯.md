@@ -268,4 +268,4 @@ class Difference {
 ### 接口 Interface
 接口与接口，接口与类之间可以继承和拓展
 ![](https://s2.loli.net/2024/05/28/KZsRqFWpyzvXwNJ.png)
-接口中可以通过静态工厂来实现
+接口中可以通过静态工厂来实现类似构造器的作用，能够防止
