@@ -140,3 +140,37 @@ effects: returns a new list which is the reversal of list, i.e.
 #### 5.避免可变量
 😀方法内部尽量不要修改传入的参数，不要设计mutating的spec，容易引发错误。除非必须是mutator方法的spec，否则避免使用mutable的类与方法。
 📕因为程序中很有可能有**多个变量指向同一个可变对象**（别名），在类的实现体或客户端**保存别名**的情况下，可能导致修改并产生bug
+🌰例子：
+客户端为了用户隐私，因此隐藏了id前5位
+```Java
+char[] id = getMitId("bitdiddle");
+for (int i = 0; i < 5; ++i) {
+    id[i] = '*';
+}
+System.out.println(id);
+```
+服务端担心效率，所以采用了cache全局可变变量(char\[\]可变)
+```Java
+private static Map<String, char[]> cache = new HashMap<String, char[]>();
+
+public static char[] getMitId(String username) throws NoSuchUserException {
+    // see if it's in the cache already
+    if (cache.containsKey(username)) {
+        return cache.get(username);
+    }
+
+    // ... look up username in MIT's database ...
+
+    // store it in the cache for future lookups
+    cache.put(username, id);
+    return id;
+}
+```
+由于char\[\]可变，修改前五位会导致Map中的数据也被更改。所以最好采用String
+## 设计好 ADT
+ADT是由操作定义的，与其内部如何实现无关
+### ADT都有啥
+1. 构造器
+2. 观察器
+3. 生产器
+4. bian'zhi
