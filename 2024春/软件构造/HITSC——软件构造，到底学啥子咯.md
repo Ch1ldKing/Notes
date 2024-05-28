@@ -277,4 +277,6 @@ class Difference {
 3. 客户端代码无法直接访问属性，通过封装get方法等来防止泄露。
 4. private只能在当前类中访问，protected可允许子类访问，public允许任何类访问
 ### 继承和重写
-final变量不允许重引用；final方法不允许重写，final类
+final变量不允许重引用；final方法不允许重写，final类不允许拓展继承
+#### Overriding
+完全相同的Signature，使用哪个运行时决定
