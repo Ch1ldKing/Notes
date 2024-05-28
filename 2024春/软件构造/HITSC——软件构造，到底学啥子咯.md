@@ -272,3 +272,6 @@ class Difference {
 `default`可以实现接口的统一功能，无需在各个实现类中重复实现
 ![image.png](https://s2.loli.net/2024/05/28/H8TXmKyMAJEflFS.png)
 ### 封装
+1. 使用接口类型声明变量
+2. 客户端仅使用接口中定义的方法
+3. 客户端仅使用接口中定义的方法
