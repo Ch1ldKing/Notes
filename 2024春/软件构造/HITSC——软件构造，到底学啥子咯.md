@@ -269,4 +269,4 @@ class Difference {
 接口与接口，接口与类之间可以继承和拓展
 ![](https://s2.loli.net/2024/05/28/KZsRqFWpyzvXwNJ.png)
 接口中可以通过**静态工厂**来实现类似构造器的作用，能够防止客户端直接接触到具体实现类![image.png](https://s2.loli.net/2024/05/28/L7iAYM3ckamQfU8.png)
-`default`可以实现接口的头一功能
+`default`可以实现接口的统一功能，无需在各个实现类中重复实现
