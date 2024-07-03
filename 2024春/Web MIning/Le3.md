@@ -1,1 +1,2 @@
 Classification(Supervised)标记数据训练，非标数据预测
+Naive Bayes Classification assume that conditional independence parameter
