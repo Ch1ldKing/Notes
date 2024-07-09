@@ -369,6 +369,7 @@ const msg = ref('from parent')
 ```
 这时候，其实如同`<p>text</p>`这种，在中间显示一些值。但我们自己写的组件需要在子组件中进行定义。
 ```vue
+<!-- ChildComp.vue -->
 <template>
   <slot>Fallback content</slot>
 </template>
