@@ -16,7 +16,7 @@ const titleClass = ref('title')
 }
 </style>
 ```
-titleClass是一个类，它指向对象title。把这个类绑定到h1标签上，在最后为title的颜色属性赋值。绑定用的是v-bind，简写:
+titleClass是一个类，它指向对象title。把这个类绑定到h1标签上，在最后为title的颜色属性赋值。绑定用的是v-bind，简写为`:`
 # 事件监听 v-on
 ```vue
 <script setup>
@@ -33,7 +33,7 @@ function increment(){
   <button @click="increment">Count is: {{ count }}</button>
 </template>
 ```
-把button用v-on:click监听，简写为@，监听click事件.
+把button用v-on:click监听，简写为`@`，监听click事件.
 # 表单绑定 v-model
 把函数和展示绑定在一起
 ```vue
@@ -52,7 +52,7 @@ function onInput(e) {
   <p>{{ text }}</p>
 </template>
 ```
-把onInput函数和text对象绑定在一起
+把`onInput`函数和`text`对象绑定在一起
 ```vue
 <script setup>
 import { ref } from 'vue'
@@ -306,4 +306,4 @@ const greeting = ref('Hello from parent')
   <ChildComp :msg="greeting"/>
 </template>
 ```
-此处通过`:`把msg属性赋值为greeting。如果子组件zh
+此处通过`:（即v-bind）`把msg属性赋值为greeting。如果子组件中没有msg，就会报错
