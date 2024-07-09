@@ -353,4 +353,17 @@ const childMsg = ref('No child msg yet')
 </template>
 ```
 ## 插槽slot
-# 奇怪的小实验
+在父组件中，调用子组件的时候插入内容
+```vue
+<script setup>
+import { ref } from 'vue'
+import ChildComp from './ChildComp.vue'
+
+const msg = ref('from parent')
+</script>
+
+<template>
+  <ChildComp>Message: {{ msg }}</ChildComp>
+</template>
+```
+这时候，其实如同`<p>
