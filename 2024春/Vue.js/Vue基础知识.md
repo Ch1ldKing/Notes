@@ -337,3 +337,17 @@ emit('update', 'hello')
 </template>
 ```
 然后在父组件中监听事件（不是watch，是v-on）
+```vue
+<!-- App.vue -->
+<script setup>
+import { ref } from 'vue'
+import ChildComp from './ChildComp.vue'
+
+const childMsg = ref('No child msg yet')
+</script>
+
+<template>
+  <ChildComp @update="(msg) => childMsg = msg" />
+  <p>{{ childMsg }}</p>
+</template>
+```
