@@ -251,4 +251,4 @@ watch(todoId, fetchData)
   <pre v-else>{{ todoData }}</pre>
 </template>
 ```
-对于这段代码，watch()在todoId变化shi
+对于这段代码，`watch()`在todoId变化时调用了`fetchData()`
