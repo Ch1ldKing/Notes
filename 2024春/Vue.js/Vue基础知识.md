@@ -277,4 +277,4 @@ import ChildComp from './ChildComp.vue'
 ```
 渲染App.vue的效果:![image.png](https://s2.loli.net/2024/07/10/Js7lHSvhDMIqGCu.png)
 ## 子组件的参数Props
-和其他组件（button，form）等一样，vue的子组件也支持attributes，v-bind等等。不同的是，子组件有何attributes需要自己定义。
+和其他组件（button，form）等一样，vue的子组件也支持attributes，可以用v-bind进行绑定。不同的是，子组件有何attributes需要自己定义。
