@@ -322,4 +322,18 @@ emit('response', 'hello from child')
   <h2>Child component</h2>
 </template>
 ```
-`defineEmits`是规定的函数，注意到其中的参数其实是一个数组，意味着你可以定义多个事件
+`defineEmits`是规定的函数，注意到其中的参数其实是一个数组，意味着你可以定义多个事件,like this
+```vue
+<!-- ChildComp.vue -->
+<script setup>
+const emit = defineEmits(['response','update'])
+
+emit('response', 'hello from child')
+emit('update', 'hello')
+</script>
+
+<template>
+  <h2>Child component</h2>
+</template>
+```
+然后在父组件中监听事件（不是watch，是v-on）
