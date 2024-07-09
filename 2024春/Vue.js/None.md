@@ -252,4 +252,4 @@ watch(todoId, fetchData)
 </template>
 ```
 对于这段代码，`watch()`在todoId变化时调用了`fetchData()`，实现监听。
-此处，`fetchData()`的作用是每次清空todoData的值，并且抓取这段传输的json数据显示出来，并赋值给t
+此处，`fetchData()`的作用是每次清空todoData的值，并且抓取这段传输的json数据显示出来，并赋值给todoData
