@@ -310,3 +310,16 @@ const greeting = ref('Hello from parent')
 ## 子组件定义事件Emit
 和其他组件（button，form）等一样，vue的子组件也支持事件，可以用v-on进行绑定。不同的是，子组件有何事件需要自己定义。
 *事件是指，比如button有click，form有submit，是规定好的HTML响应事件*
+```vue
+<!-- ChildComp.vue -->
+<script setup>
+const emit = defineEmits(['response'])
+
+emit('response', 'hello from child')
+</script>
+
+<template>
+  <h2>Child component</h2>
+</template>
+```
+注意到
