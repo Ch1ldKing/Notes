@@ -123,4 +123,5 @@ function removeTodo(todo) {
   </ul>
 </template>
 ```
-对todos进行循环渲染，并且把标签<li>的key绑定到id上
+对todos进行循环渲染，并且把标签\<li\>的key绑定到id上
+# 计算属性computed
