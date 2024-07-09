@@ -200,4 +200,8 @@ What that means? 意思就是如果我采用一个函数，每次我点击隐藏
 ```js
 <p ref="pElementRef">hello</p>
 ```
-声明一个ref指向DOM元素，这是一种特殊的ref，
+声明一个指向DOM元素的ref，这是一种特殊的ref，要想访问它，我们需要声明一个同名的ref
+```js
+const pElementRef = ref(null)
+```
+使用null
