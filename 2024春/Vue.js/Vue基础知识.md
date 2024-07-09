@@ -257,8 +257,16 @@ watch(todoId, fetchData)
 vue的nb之处之一在于嵌套组件
 比如我有一个文件ChildComp.vue，是我写好的一个组件
 我想在App.vue中调用它作为一个小组件
+
 ```vue
-<!--App.vue -->
+<!-- ChildComp.vue -->
+<template>
+  <h2>A Child Component!</h2>
+</template>
+```
+
+```vue
+<!-- App.vue -->
 <script setup>
 import ChildComp from './ChildComp.vue'
 </script>
@@ -267,3 +275,4 @@ import ChildComp from './ChildComp.vue'
   <ChildComp />
 </template>
 ```
+渲染App.vue的效果:![image.png](https://s2.loli.net/2024/07/10/Js7lHSvhDMIqGCu.png)
