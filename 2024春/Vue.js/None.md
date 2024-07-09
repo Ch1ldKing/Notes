@@ -182,4 +182,5 @@ function removeTodo(todo) {
 ```js
 function filteredTodos() { return hideCompleted.value ? todos.value.filter((t) => !t.done) : todos.value }
 ```
-这样的话，在每次我点击隐藏按钮的时候，都要计算一边
+这样的话，在每次我点击隐藏按钮的时候，都要计算一遍过滤的数组
+*其实这个过滤器filter，并没有删掉数组中的yua*
