@@ -16,4 +16,4 @@ const titleClass = ref('title')
 }
 </style>
 ```
-titleClass是一个东西，它指向对象title。
+titleClass是一个类，它指向对象title。把这个类绑定到h1标签上，在最后为title的颜色属性赋值
