@@ -307,3 +307,4 @@ const greeting = ref('Hello from parent')
 </template>
 ```
 此处通过`:（即v-bind）`把msg属性赋值为greeting。如果子组件中没有msg，就会报错
+## 子组件定义shi'jia
