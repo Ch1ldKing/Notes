@@ -183,4 +183,6 @@ function removeTodo(todo) {
 function filteredTodos() { return hideCompleted.value ? todos.value.filter((t) => !t.done) : todos.value }
 ```
 这样的话，在每次我点击隐藏按钮的时候，都要计算一遍过滤的数组
-*其实这个过滤器filter，并没有删掉数组中的yua*
+*其实这个过滤器filter，并没有删掉数组中的元素，只是返回了一个经过过滤的子数组*
+如果我采用computed()，这实质上是一个属性，也就是一种vue提供的数据格式。
+用computed()的话，lai'ding其括号里面放的还是
