@@ -17,6 +17,7 @@ const titleClass = ref('title')
 </style>
 ```
 titleClass是一个类，它指向对象title。把这个类绑定到h1标签上，在最后为title的颜色属性赋值。绑定用的是v-bind，简写为`:`
+class是规定好的HTML标签属性
 # 事件监听 v-on
 ```vue
 <script setup>
