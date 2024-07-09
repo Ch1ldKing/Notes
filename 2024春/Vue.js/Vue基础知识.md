@@ -276,3 +276,4 @@ import ChildComp from './ChildComp.vue'
 </template>
 ```
 渲染App.vue的效果:![image.png](https://s2.loli.net/2024/07/10/Js7lHSvhDMIqGCu.png)
+## 子组件的参数Props
