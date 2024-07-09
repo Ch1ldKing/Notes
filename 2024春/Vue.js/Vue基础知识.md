@@ -355,6 +355,7 @@ const childMsg = ref('No child msg yet')
 ## 插槽slot
 在父组件中，调用子组件的时候插入内容
 ```vue
+<!-- App.vue -->
 <script setup>
 import { ref } from 'vue'
 import ChildComp from './ChildComp.vue'
@@ -366,4 +367,9 @@ const msg = ref('from parent')
   <ChildComp>Message: {{ msg }}</ChildComp>
 </template>
 ```
-这时候，其实如同`<p>
+这时候，其实如同`<p>text</p>`这种，在中间显示一些值。但我们自己写的组件需要在子组件中进行定义。
+```vue
+<template>
+  <slot>Fallback content</slot>
+</template>
+```
