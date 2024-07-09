@@ -36,3 +36,36 @@ function increment(){
 把button用v-on:click监听，简写为@，监听click事件.
 # 表单绑定 v-model
 把函数和展示绑定在一起
+```vue
+<script setup>
+import { ref } from 'vue'
+
+const text = ref('')
+
+function onInput(e) {
+  text.value = e.target.value
+}
+</script>
+
+<template>
+  <input :value="text" @input="onInput" placeholder="Type here">
+  <p>{{ text }}</p>
+</template>
+```
+把onInput函数和text对象绑定在一起
+```vue
+<script setup>
+import { ref } from 'vue'
+
+const text = ref('')
+
+function onInput(e) {
+  text.value = e.target.value
+}
+</script>
+
+<template>
+  <input :value="text" @input="onInput" placeholder="Type here">
+  <p>{{ text }}</p>
+</template>
+```
