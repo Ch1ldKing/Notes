@@ -33,4 +33,4 @@ function increment(){
   <button @click="increment">Count is: {{ count }}</button>
 </template>
 ```
-把button用
+把button用v-on:click监听，简写为@，监听click事件。{{}}
