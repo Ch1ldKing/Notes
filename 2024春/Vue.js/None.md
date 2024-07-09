@@ -251,4 +251,5 @@ watch(todoId, fetchData)
   <pre v-else>{{ todoData }}</pre>
 </template>
 ```
-对于这段代码，`watch()`在todoId变化时调用了`fetchData()`
+对于这段代码，`watch()`在todoId变化时调用了`fetchData()`，实现监听。
+此处，`fetchData()`的作用是每次清空todoData的值，并且显示
