@@ -179,6 +179,7 @@ function removeTodo(todo) {
 </style>
 ```
 我个人的理解是，本来要隐藏这个done的任务，是需要一个函数来计算是不是完成了，比如
-```
+```js
 function filteredTodos() { return hideCompleted.value ? todos.value.filter((t) => !t.done) : todos.value }
 ```
+这样的话，在每次我点击隐藏按钮的时候，都要计算一边
