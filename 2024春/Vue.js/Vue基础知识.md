@@ -322,4 +322,4 @@ emit('response', 'hello from child')
   <h2>Child component</h2>
 </template>
 ```
-注意到
+`defineEmits`是规定的函数，注意到其中的参数其实是一个数组，意味着你可以定义多个事件
