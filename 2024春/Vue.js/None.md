@@ -222,4 +222,4 @@ onMounted(() => {
   <p ref="pElementRef">Hello</p>
 </template>
 ```
-在这里，`textContent`是一种DOM属性，是规定好的
+在这里，`textContent`是一种DOM属性，是规定好的，其他规定好的[[DOM属性]]
