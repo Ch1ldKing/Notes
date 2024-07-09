@@ -66,3 +66,21 @@ const text = ref('')
 </template>
 ```
 # 条件渲染
+给组件加上逻辑关系来**渲染**
+```vue
+<script setup>
+import { ref } from 'vue'
+
+const awesome = ref(true)
+
+function toggle() {
+  awesome.value = !awesome.value
+}
+</script>
+
+<template>
+  <button @click="toggle">Toggle</button>
+  <h1 v-if="awesome">Vue is awesome!</h1>
+  <h1 v-else>Oh no 😢</h1>
+</template>
+```
