@@ -1,5 +1,5 @@
 # Attribute 
-```html
+```vue
 <script setup>
 import { ref } from 'vue'
 
@@ -16,3 +16,4 @@ const titleClass = ref('title')
 }
 </style>
 ```
+ 
