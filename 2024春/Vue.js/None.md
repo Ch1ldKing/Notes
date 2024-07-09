@@ -123,4 +123,4 @@ function removeTodo(todo) {
   </ul>
 </template>
 ```
-对todos
+对todos进行循环渲染，并且把
