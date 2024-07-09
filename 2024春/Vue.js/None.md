@@ -197,3 +197,7 @@ const filteredTodos = computed(() => {
 2. 当这其中的值不变化，不需要重新调用computed中的函数
 What that means? 意思就是如果我采用一个函数，每次我点击隐藏按钮的时候，都要计算一遍过滤的数组。而采用computed就不需要了，如果我没有改变任务是否完成（即todos数组的值），我点击按钮得到的值是上一次**缓存**下来的
 # 模板引用
+```js
+<p ref="pElementRef">hello</p>
+```
+声明一个ref指向DOM元素，这是一种特殊的ref，
