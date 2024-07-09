@@ -280,6 +280,7 @@ import ChildComp from './ChildComp.vue'
 和其他组件（button，form）等一样，vue的子组件也支持attributes，可以用v-bind进行绑定。不同的是，子组件有何attributes需要自己定义。
 *attributes是指，比如button有type，img有src，是规定好的HTML标签属性*
 ```vue
+
 <script setup>
 const props = defineProps({
   msg: String
@@ -291,4 +292,4 @@ const props = defineProps({
 </template>
 ```
 props中就是定义好的属性，此处有一个msg
-虽然叫做属性，但这是对于调用这个子组件的
+属性是对于调用这个子组件的父组件而言的。在父组件眼里，这个msg是一个属性。而对于子组件内部，msg是一个参数（变量）
