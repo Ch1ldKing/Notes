@@ -307,6 +307,6 @@ const greeting = ref('Hello from parent')
 </template>
 ```
 此处通过`:（即v-bind）`把msg属性赋值为greeting。如果子组件中没有msg，就会报错
-## 子组件定义事件
+## 子组件定义事件Emit
 和其他组件（button，form）等一样，vue的子组件也支持事件，可以用v-on进行绑定。不同的是，子组件有何事件需要自己定义。
 *事件是指，比如button有click，form有submit，是规定好的HTML响应事件*
