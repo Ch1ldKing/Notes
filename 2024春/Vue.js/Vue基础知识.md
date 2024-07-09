@@ -352,3 +352,5 @@ const childMsg = ref('No child msg yet')
   <p>{{ childMsg }}</p>
 </template>
 ```
+## 插槽slot
+# 奇怪的小实验
