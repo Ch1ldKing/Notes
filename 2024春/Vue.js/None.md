@@ -178,4 +178,7 @@ function removeTodo(todo) {
 }
 </style>
 ```
-我个人的理解是，本来要隐藏这个done的任务，是需要一个
+我个人的理解是，本来要隐藏这个done的任务，是需要一个函数来计算是不是完成了，比如
+```
+function filteredTodos() { return hideCompleted.value ? todos.value.filter((t) => !t.done) : todos.value }
+```
