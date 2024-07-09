@@ -256,4 +256,14 @@ watch(todoId, fetchData)
 # 子组件
 vue的nb之处之一在于嵌套组件
 比如我有一个文件ChildComp.vue，是我写好的一个组件
-我想在App.vue中调用它
+我想在App.vue中调用它作为一个小组件
+```vue
+<!--App.vue -->
+<script setup>
+import ChildComp from './ChildComp.vue'
+</script>
+
+<template>
+  <ChildComp />
+</template>
+```
