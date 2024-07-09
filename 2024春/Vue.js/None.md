@@ -65,7 +65,7 @@ const text = ref('')
   <p>{{ text }}</p>
 </template>
 ```
-# 条件渲染
+# 条件渲染v-if,v-else
 给组件加上逻辑关系来**渲染**
 ```vue
 <script setup>
@@ -85,7 +85,7 @@ function toggle() {
 </template>
 ```
 这样实现有条件的渲染组件
-# 循环渲染
+# 循环渲染v-for
 ```vue
 <script setup>
 import { ref } from 'vue'
@@ -123,4 +123,4 @@ function removeTodo(todo) {
   </ul>
 </template>
 ```
-对todos进行循环渲染，并且把
+对todos进行循环渲染，并且把标签<li>的key绑定到id上
