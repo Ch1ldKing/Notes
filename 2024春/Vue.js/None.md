@@ -204,4 +204,4 @@ What that means? 意思就是如果我采用一个函数，每次我点击隐藏
 ```js
 const pElementRef = ref(null)
 ```
-使用null
+使用null进行初始化，是因为`<script setup>`执行的时候，后面模板中的DOM还未渲染。因此要采用函数来shi
