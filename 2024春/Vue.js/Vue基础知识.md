@@ -253,3 +253,7 @@ watch(todoId, fetchData)
 ```
 对于这段代码，`watch()`在todoId变化时调用了`fetchData()`，实现监听。
 此处，`fetchData()`的作用是每次清空todoData的值，并且抓取这段传输的json数据显示出来，并赋值给todoData
+# 子组件
+vue的nb之处之一在于嵌套组件
+比如我有一个文件ChildComp.vue，是我写好的一个组件
+我想在App.vue中调用它
