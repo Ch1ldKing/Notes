@@ -194,4 +194,5 @@ const filteredTodos = computed(() => {
 ```
 用computed()的话，来定义一个量，其括号里面放的其实还是函数内的语句，但问题在于
 1. 这个不是函数，而是一个量，像const int b；中的b
-2. 
+2. 当这其中的值不变化，不需要重新调用computed中的函数
+What's that mean? 意思就是如果我采用一个函数，每次我点击
