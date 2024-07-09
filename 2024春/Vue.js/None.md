@@ -207,5 +207,19 @@ const pElementRef = ref(null)
 使用null进行初始化，是因为`<script setup>`执行的时候，后面模板中的DOM还未渲染。因此要采用函数来使这部分代码在组件挂载之后再执行
 # 生命周期
 使用`onMounted()`来实现在组件挂载之后再执行其内部的代码
+```vue
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const pElementRef = ref(null)
+
+onMounted(() => {
+  pElementRef.value.textContent = 'mounted!'
+})
+</script>
+
+<template>
+  <p ref="pElementRef">Hello</p>
+</template>
 ```
-```
+在这里，`textContent`是一种DOM属性，是规定好的
