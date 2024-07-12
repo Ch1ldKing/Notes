@@ -352,7 +352,7 @@ const childMsg = ref('No child msg yet')
   <p>{{ childMsg }}</p>
 </template>
 ```
-对这个的理解：子组件定义了一些事件`defineEmits(['response','update'])`，然后这个事件会在某些条件下触发，也就是运行到`emit('response', 'hello from child')`语句的时候触发，并携带后面的数据`'hello from child'`。
+对这个的理解：子组件定义了一些事件`defineEmits(['response','update'])`，然后这个事件会在某些条件下触发，也就是运行到`emit('response', 'hello from child')`语句的时候触发，并携带后面的数据`'hello from child'`。父组件监听这个事件`@update`，这个事件被触发的时候，将携带的数据传输给`="(msg) => childMsg = msg"`这部分的函数。
 ## 插槽slot
 在父组件中，调用子组件的时候插入内容
 ```vue
