@@ -352,6 +352,7 @@ const childMsg = ref('No child msg yet')
   <p>{{ childMsg }}</p>
 </template>
 ```
+对这个的理解：子组件定义了一些事件`defineEmits(['response','update'])`，然后
 ## 插槽slot
 在父组件中，调用子组件的时候插入内容
 ```vue
