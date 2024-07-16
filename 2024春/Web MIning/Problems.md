@@ -25,3 +25,12 @@
 遇到问题解决的思路，团队合作
 未来
 
+This project aims to develop a functional application. Below is an overview of the technical implementation:
+Data Mining: Using web crawlers to gather a large variety of recipe data from the internet.
+Data Cleaning: Utilizing pandas to remove blanks and duplicate data, and to extract ingredient information.
+Data Models: Popularity-based recipe recommendation model, Clustering-based menu generation model, 
+Association analysis-based ingredient recommendation model, LLM recipe generation model
+Model Evaluation: Coverage and satisfaction to evaluate recommendation models, Cohesion and separation 
+to evaluate clustering models, Mean squared error to evaluate association models
+Tech Stack: Frontend: Vue 3, Backend: Spring Boot, Database: PostgreSQL, Models: Flask framework
+Agile Development: Analyze software requirements, Plan phase increments, Collaborate via Git, Implement CI/CD with GitHub Actions
