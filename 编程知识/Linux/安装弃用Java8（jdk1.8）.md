@@ -18,4 +18,6 @@ export  PATH=${JAVA_HOME}/bin:$PATH
 ```
 
 ## 重新执行profile文件
-`source `
+`source /etc/profile`
+## 检查
+`java -version`
