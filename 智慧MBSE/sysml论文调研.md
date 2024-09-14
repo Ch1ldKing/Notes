@@ -85,4 +85,4 @@
 
 # Leveraging Generative AI to Create, Modify, and Query MBSE Models
 
-在零样本、
+在零样本、少样本、RAG对GPT4和3.5进行测试。其po
