@@ -113,3 +113,15 @@
 4. **需求陈述**：自然语言描述模型的某一部分如何工作或在什么条件下满足某些功能
 5. **从模型中提取块的指令**：要求LLM做的事情，从刚刚的模型中提取满足需求的块，提供了LLMs需要输出的格式
 6. **输出格式指令**：告诉LLMs如何返回结果。比如要求一个列表List
+### 链式思维
+就是COT，示例如下：
+```py
+The logical reasoning steps to satisfy this requirement are as follows:
+
+- Step 1: Identify the reset block, which ensures the condition "reset is True". The relevant block is the Switch block with SID=128.
+
+- Step 2: Check that the Initial Condition (ic) is within the Top and Bottom Limits (BL ≤ ic ≤ TL). This is handled by the RelationalOperator block with SID=129.
+
+- Step 3: Ensure that the output (yout) matches the Initial Condition (ic) when the reset is True. The block that ensures this behavior is the Inport block with SID=134 for TL and SID=135 for BL.
+
+```
