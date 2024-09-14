@@ -85,4 +85,4 @@
 
 # Leveraging Generative AI to Create, Modify, and Query MBSE Models
 
-在零样本、少样本、RAG对GPT4和3.5进行测试。其po
+在零样本、少样本、RAG对GPT4和3.5进行测试。RAG知识为github中对sysml v2的定义等官方文档，少样本给出一些sysml v2语言如何对应自然语言需求的示例
