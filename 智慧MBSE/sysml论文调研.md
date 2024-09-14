@@ -98,9 +98,9 @@
 ```
 这个提示明确地向模型展示了如何在SysML v2中正确地连接构件
 - **示例2**：研究者还给出了关于避免使用“and”来连接多个构件的提示：
+  ```
+    There should be no and statements in connections. 
+    For example, 'connect frontBrakes to frontWheel and bicycleFrame;' should be:
+    connect frontBrakes to frontWheel;  connect frontBrakes to bicycleFrame;
+    ```
     
-    perl
-    
-    复制代码
-    
-    `There should be no and statements in connections. For example, 'connect frontBrakes to frontWheel and bicycleFrame;' should be:  connect frontBrakes to frontWheel;  connect frontBrakes to bicycleFrame;`
