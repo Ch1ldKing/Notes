@@ -83,3 +83,6 @@
 ## 4. 可能的升级
 作者认为未来可以通过引入更高级的建模方法（如分层建模、增量建模等）来进一步提高TTool-AI的性能
 
+# Leveraging Generative AI to Create, Modify, and Query MBSE Models
+
+在零样本、
