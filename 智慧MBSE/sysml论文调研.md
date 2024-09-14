@@ -1,6 +1,7 @@
 # System Architects are not alone Anymore: Automatic System Modeling with AI
 ## 1. TTool
-利用TTool开源Sysml框架。在提示词中加入系统工程知识，系统的定义
+利用TTool开源Sysml框架。在提示词中加入系统工程知识，该系统的定义，需要在以往的Sysml图上进行修改的Sysml代码，以及新问题
+个人认为可以升级RAG
 ![image.png](https://s2.loli.net/2024/09/14/LoO3qeHNQMcWPfg.png)
 
 ## 2. 自动反馈循环机制
