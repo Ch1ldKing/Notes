@@ -1,6 +1,8 @@
 # System Architects are not alone Anymore: Automatic System Modeling with AI
 ## 1. TTool
-利用TTool开源Sysml框架
+利用TTool开源Sysml框架。在提示词中加入系统工程知识，系统的定义
+![image.png](https://s2.loli.net/2024/09/14/LoO3qeHNQMcWPfg.png)
+
 ## 2. 自动反馈循环机制
 
 设置一个循环机制检查输出中是否有错误，然后再将错误嵌入到prompt中让LLM重新生成，最大20次
