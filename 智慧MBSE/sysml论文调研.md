@@ -88,3 +88,22 @@
 在零样本、少样本、RAG对GPT4和3.5进行测试。RAG知识为github中对SysML v2的规范文档、模板和示例。通过RAG，模型能够在生成SysML模型时，从外部文档中提取到具体的知识（如SysML v2的元模型、文本和图形符号）。少样本给出一些sysml v2语言如何对应自然语言需求的示例
 
 少样本
+并未给出系统的少样本提示编写指南，但示例
+- 示例1：研究者提供了一个关于如何正确连接构件的提示：
+    
+```
+    Connections should be formatted like the following two examples:  
+    connect handlebars to bicycleFrame;  
+    connect seatPost to bicycleFrame
+```
+;`
+    
+    这个提示明确地向模型展示了如何在SysML v2中正确地连接构件。
+    
+- **示例2**：研究者还给出了关于避免使用“and”来连接多个构件的提示：
+    
+    perl
+    
+    复制代码
+    
+    `There should be no and statements in connections. For example, 'connect frontBrakes to frontWheel and bicycleFrame;' should be:  connect frontBrakes to frontWheel;  connect frontBrakes to bicycleFrame;`
