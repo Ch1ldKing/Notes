@@ -1,10 +1,10 @@
 # System Architects are not alone Anymore: Automatic System Modeling with AI
 ## 1. TTool
 利用TTool开源Sysml框架。在提示词中加入系统工程知识，该系统的定义，需要在以往的Sysml图上进行修改的Sysml代码，以及新问题
-个人认为可以升级RAG
+个人认为可以采用RAG，不过原理是一样的
 ![image.png](https://s2.loli.net/2024/09/14/LoO3qeHNQMcWPfg.png)
 
-## 2. 自动反馈循环机制
+## 2. **自动反馈循环机制**
 
 设置一个循环机制检查输出中是否有错误，然后再将错误嵌入到prompt中让LLM重新生成，最大20次
 
