@@ -94,12 +94,9 @@
 ```
     Connections should be formatted like the following two examples:  
     connect handlebars to bicycleFrame;  
-    connect seatPost to bicycleFrame
+    connect seatPost to bicycleFrame;
 ```
-;`
-    
-    这个提示明确地向模型展示了如何在SysML v2中正确地连接构件。
-    
+这个提示明确地向模型展示了如何在SysML v2中正确地连接构件
 - **示例2**：研究者还给出了关于避免使用“and”来连接多个构件的提示：
     
     perl
