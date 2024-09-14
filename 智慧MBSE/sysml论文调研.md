@@ -31,7 +31,7 @@
 ![](https://s2.loli.net/2024/09/14/w6UO9tKWEpZmjBo.png)
 分两步进行
 - **问题1** 的重点是识别系统的**构件及其属性**。其任务是从系统规范中提取出构件的名称、属性及其数据类型（如`int`或`bool`），并按要求的JSON格式输出。
-  ```
+```json
   {
   "blocks": [
     {
@@ -50,7 +50,26 @@
   ]
 }
 ```
-```
 
-```
 - **问题2** 的重点是识别系统构件之间的**信号连接**。在问题1识别出的构件基础上，问题2进一步识别这些构件之间如何通过信号进行通信，并定义信号的输入、输出属性及其连接规则。
+  ```json
+  {
+  "blocks": [
+    {
+      "name": "CoffeeMachine",
+      "signals": [
+        {"name": "coinAccepted", "type": "bool", "direction": "input"}
+      ]
+    },
+    {
+      "name": "CoinSensor",
+      "signals": [
+        {"name": "coinInserted", "type": "bool", "direction": "output"}
+      ]
+    }
+  ],
+  "connections": [
+    {"from": "CoinSensor.coinInserted", "to": "CoffeeMachine.coinAccepted"}
+  ]
+}
+```
