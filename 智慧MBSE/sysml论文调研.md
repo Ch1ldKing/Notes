@@ -107,4 +107,5 @@
 # Requirements-driven Slicing of Simulink Models Using LLMs
 ## 提示模板
 1. **模型切片的定义（任务定义）**：提示的开头部分包含对模型切片任务的定义和说明。这部分帮助LLMs理解任务的目标，即从模型中提取相关的块，以满足给定的需求。
-2. 
+2. **Simulink模型的文本表示**：将模型转化为文本。如果是Sysml，可以插入Sysml的语言
+3. **示例**：少量样本或链式思维学习
