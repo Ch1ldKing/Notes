@@ -127,3 +127,4 @@ The logical reasoning steps to satisfy this requirement are as follows:
 ```
 帮助模型逐渐理解如何满足需求并选择模型中的必要块。
 
+![image.png](https://s2.loli.net/2024/09/17/cmEMrtjOpJf54oq.png)
