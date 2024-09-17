@@ -126,3 +126,4 @@ The logical reasoning steps to satisfy this requirement are as follows:
 - Step 3: Ensure that the output (yout) matches the Initial Condition (ic) when the reset is True. The block that ensures this behavior is the Inport block with SID=134 for TL and SID=135 for BL.
 ```
 帮助模型逐渐理解如何满足需求并选择模型中的必要块。
+
