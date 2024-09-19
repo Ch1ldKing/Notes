@@ -6,5 +6,5 @@ Xreal air2s 高通骁龙XR2
 Amazon Echo Frames（音频）
 Lucyd glasses
 MYVU 高通骁龙W5+ Gen 1
-INMO air2 
+INMO air2  WTM2101
 Gyges Labs(显示集成在镜框中)
