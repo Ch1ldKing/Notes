@@ -7,3 +7,4 @@ Xreal air2s 高通骁龙XR2
 Amazon Echo Frames
 Lucyd glasses
 MYVU W5+ Gen 1
+INMO air2
