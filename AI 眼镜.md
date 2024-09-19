@@ -18,3 +18,4 @@
 | 联发科      | MT8788   |
 | 骁龙       | 八核高通骁龙芯片 |
 SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%）、PCB（4%）和音响（3%）
+⚠️upload failed, check dev console
