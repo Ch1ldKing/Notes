@@ -6,7 +6,7 @@
 | RayNeo Air 2           | 高通骁龙XR2       |
 | Xreal air2s            | 高通骁龙XR2       |
 | Amazon Echo Frames（音频） |               |
-| Lucyd glasses          |               |
+| Lucyd glasses          | 高通            |
 | MYVU                   | 高通骁龙W5+ Gen 1 |
-| INMO air2              | WTM2101       |
-| Gyges Labs(显示集成在镜框中)   |               |
+| INMO air2              | WTM2101（国产）   |
+| Gyges Labs(显示集成在镜框中)   | 高通            |
