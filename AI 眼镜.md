@@ -5,3 +5,5 @@ huawei glasses3
 RayNeo Air 2
 TCL NXTWEAR S+
 Xreal air2s
+Amazon Echo Frames
+Lucyd glasses
