@@ -1,5 +1,8 @@
-Ray-Ban meta 高通骁龙AR1 Gen 1
-Meta Lens Chat 
+| 眼镜           | soc           |
+| ------------ | ------------- |
+| Ray-Ban meta | 高通骁龙AR1 Gen 1 |
+|              |               |
+|              |               |
 solos airgo3 
 RayNeo Air 2  高通骁龙XR2
 Xreal air2s 高通骁龙XR2
