@@ -34,3 +34,8 @@ SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%�
 | 金士顿 | 200+      | https://www.kingston.com/cn/embedded/emcp-embedded-flash |
 | 三星  | 咸鱼大量40-50 | 这个不清楚能不能用于可穿戴设备，好像比较大                                    |
 **wifi/蓝牙*
+
+| 品牌        | 价格  |
+| --------- | --- |
+| 高通QCA2066 |     |
+**eMCP**
