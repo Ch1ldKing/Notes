@@ -59,3 +59,5 @@ AI引擎：Qualcomm® Hexagon™ V66K处理器
 接口：屏幕接口MIPI-DSI，存储支持DDR的QSPI，通用USB2.0
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
 做实验专用的开发套件：
+https://www.thundercomm.com/product/w5-development-kit/
+价格2000美元
