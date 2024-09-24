@@ -56,5 +56,5 @@ SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%�
 安全系统：高通TEE
 AI引擎：Qualcomm® Hexagon™ V66K处理器
 操作系统支持：Wear OS，RTOS，Android
-接口：
+接口：屏幕接口MIPI-DSI，存储支持DDR的QSPI，通用USB2.0
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
