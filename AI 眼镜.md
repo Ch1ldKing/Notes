@@ -45,5 +45,6 @@ SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%�
 # Snapdragon W5+ Gen 1 Wearable Platform
 
 平台总大小：边长<9.5mm,高度 0.48mm
+核心soc：4x Arm® Cortex®-A53 处理器，频率1.7GHz
 
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
