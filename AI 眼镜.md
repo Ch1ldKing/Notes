@@ -46,10 +46,10 @@ SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%�
 
 平台总大小：边长<9.5mm,高度 0.48mm
 核心soc：4核心 Arm架构 Cortex®-A53 处理器，频率1.7GHz
-核心GPU：Qualcomm® Adreno™ A702核心，图形库
+核心GPU：Qualcomm® Adreno™ A702核心，图形库OpenGL® ES 3.1，频率最高1GHz
 协处理器：核心Cortex M55，图形架构2.5D，机器学习核心ARM Ethos-U55（NPU）
 闪存：eMMC 4.5
 内存：16位2133Mhz频率 DDR4
-
+无线通信：WiFi 4，支持2.4和5频道，
 
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
