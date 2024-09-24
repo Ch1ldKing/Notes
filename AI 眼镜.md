@@ -44,5 +44,5 @@ SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%�
 
 # Snapdragon W5+ Gen 1 Wearable Platform
 
-**工艺**： 4nm
+平台总大小：90mm^2
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
