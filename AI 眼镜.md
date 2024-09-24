@@ -39,6 +39,8 @@ SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%�
 | --------- | --- |
 | 高通QCA2066 |     |
 **电源管理**
+![7febd38c75e7b07fa19644ffbd9a3a5.jpg](https://s2.loli.net/2024/09/24/xb3jdvowYX1rZlM.jpg)
+![346b21b30860eb76bdc1308ca0d76b3.jpg](https://s2.loli.net/2024/09/24/ow7Q6YGVdxIEUNW.jpg)
 
 # Snapdragon W5+ Gen 1 Wearable Platform
 
