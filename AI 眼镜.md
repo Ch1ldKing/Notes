@@ -52,6 +52,7 @@ SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%�
 内存：16位2133Mhz频率 DDR4
 无线通信：WiFi 4，支持2.4和5频道，蓝牙5.3，支持蜂窝移动4G
 射频：高通RFFE
-相机：16MP光圈
+图像处理器：支持16MP双摄像头
+安全系统：高通TEE
 
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
