@@ -46,6 +46,6 @@ SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%�
 
 平台总大小：边长<9.5mm,高度 0.48mm
 核心soc：4核心 Arm架构 Cortex®-A53 处理器，频率1.7GHz
-协处理器：核心Cortex M55
+协处理器：核心Cortex M55，图形
 
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
