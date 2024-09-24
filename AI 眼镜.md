@@ -58,3 +58,4 @@ AI引擎：Qualcomm® Hexagon™ V66K处理器
 操作系统支持：Wear OS，RTOS，Android
 接口：屏幕接口MIPI-DSI，存储支持DDR的QSPI，通用USB2.0
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
+做实验专用的开发套件：
