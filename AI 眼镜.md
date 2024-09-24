@@ -54,5 +54,7 @@ SOC（34%）、ROM+RAM（7%）、OEM（9%）、摄像头（5%）、电池（4%�
 射频：高通RFFE
 图像处理器：支持16MP双摄像头
 安全系统：高通TEE
-
+AI引擎：Qualcomm® Hexagon™ V66K处理器
+操作系统支持：Wear OS，RTOS，Android
+接口：
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
