@@ -71,7 +71,7 @@ https://www.thundercomm.com/product/w5-development-kit/
 协处理器：核心Cortex M55，图形架构2.5D，机器学习核心ARM Ethos-U55（NPU）
 闪存：eMMC 4.5
 内存：16位2133Mhz频率 DDR4
-无线通信：WiFi 4，支持2.4和5频道，蓝牙5.3，支持蜂窝移动4G
+无线通信：WiFi 4，支持2.4和5频道，蓝牙5.0,4.2，支持蜂窝移动4G
 射频：高通RFFE
 图像处理器：支持16MP双摄像头
 安全系统：高通TEE
