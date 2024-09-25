@@ -67,10 +67,9 @@ https://www.thundercomm.com/product/w5-development-kit/
 # Snapdragon AR1 Gen 1 Platform
 # Snapdragon Wear 4100+ Platform
 cpu制程：12nm
-平台总大小：主处理器边长10 mm,协处理器28mm^2,高度 0.69mm
+平台总大小：主处理器边长10 mm,PMIC(电源管理IC)28mm^2高度 0.69mm
 核心soc：Arm架构 Cortex®-A53 处理器，频率2GHz
 核心GPU：Qualcomm® Adreno™ A504核心，图形库OpenGL® ES 3.1
-协处理器：核心Cortex M55，图形架构2.5D，机器学习核心ARM Ethos-U55（NPU）
 闪存：eMMC 4.5
 内存：750Mhz DDR3
 无线通信：WiFi 4，蓝牙5.0,4.2，支持蜂窝移动4G，各种卫星定位
@@ -79,4 +78,5 @@ cpu制程：12nm
 安全系统：高通TEE
 操作系统支持：Wear OS
 接口：屏幕接口MIPI-DSI，通用USB2.0
+电源管理IC
 
