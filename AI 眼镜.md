@@ -64,3 +64,17 @@ https://www.thundercomm.com/product/w5-development-kit/
 # Snapdragon XR2+ Gen 2 Platform
 设备端 AI，Wi-Fi 7
 # Snapdragon AR2 Gen 1 Platform
+# Snapdragon Wear 4100+ Platform
+平台总大小：主处理器边长10 mm,协处理器28高度 0.48mm
+核心soc：4核心 Arm架构 Cortex®-A53 处理器，频率1.7GHz
+核心GPU：Qualcomm® Adreno™ A702核心，图形库OpenGL® ES 3.1，频率最高1GHz
+协处理器：核心Cortex M55，图形架构2.5D，机器学习核心ARM Ethos-U55（NPU）
+闪存：eMMC 4.5
+内存：16位2133Mhz频率 DDR4
+无线通信：WiFi 4，支持2.4和5频道，蓝牙5.3，支持蜂窝移动4G
+射频：高通RFFE
+图像处理器：支持16MP双摄像头
+安全系统：高通TEE
+AI引擎：Qualcomm® Hexagon™ V66K处理器
+操作系统支持：Wear OS，RTOS，Android
+接口：屏幕接口MIPI-DSI，存储支持DDR的QSPI，通用USB2.0
