@@ -85,7 +85,10 @@ cpu制程：12nm
 
 # 联发科 Linklt 平台
 # 联发科MT2523
+大小：9.0\*6.2mm
 核心CPU：ARM® Cortex®‐M4F MCU架构
 内存：4MB PSRAM
 闪存：4MB
 无线通信:蓝牙2.1，4.0（丐版）
+图像处理器：640 x 480
+接口：pi
