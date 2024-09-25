@@ -83,3 +83,4 @@ cpu制程：12nm
 接口：屏幕接口MIPI-DSI，通用USB2.0
 电源管理IC
 
+# 联发科 Linklt 平台
