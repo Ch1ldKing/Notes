@@ -65,9 +65,9 @@ https://www.thundercomm.com/product/w5-development-kit/
 设备端 AI，Wi-Fi 7
 # Snapdragon AR2 Gen 1 Platform
 # Snapdragon Wear 4100+ Platform
-平台总大小：主处理器边长10 mm,协处理器28高度 0.48mm
-核心soc：4核心 Arm架构 Cortex®-A53 处理器，频率1.7GHz
-核心GPU：Qualcomm® Adreno™ A702核心，图形库OpenGL® ES 3.1，频率最高1GHz
+平台总大小：主处理器边长10 mm,协处理器28mm^2,高度 0.69mm
+核心soc：Arm架构 Cortex®-A53 处理器，频率2GHz
+核心GPU：Qualcomm® Adreno™ A504核心，图形库OpenGL® ES 3.1
 协处理器：核心Cortex M55，图形架构2.5D，机器学习核心ARM Ethos-U55（NPU）
 闪存：eMMC 4.5
 内存：16位2133Mhz频率 DDR4
