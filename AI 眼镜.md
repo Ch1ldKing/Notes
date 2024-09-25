@@ -64,6 +64,7 @@ https://www.thundercomm.com/product/w5-development-kit/
 # Snapdragon XR2+ Gen 2 Platform
 设备端 AI，Wi-Fi 7
 # Snapdragon AR2 Gen 1 Platform
+# Snapdragon AR1 Gen 1 Platform
 # Snapdragon Wear 4100+ Platform
 cpu制程：12nm
 平台总大小：主处理器边长10 mm,协处理器28mm^2,高度 0.69mm
@@ -78,4 +79,4 @@ cpu制程：12nm
 安全系统：高通TEE
 操作系统支持：Wear OS
 接口：屏幕接口MIPI-DSI，通用USB2.0
-数字信号处理器
+
