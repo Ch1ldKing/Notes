@@ -85,3 +85,5 @@ cpu制程：12nm
 
 # 联发科 Linklt 平台
 # 联发科MT2523
+核心CPU：ARM® Cortex®‐M4F MCU架构
+内存：4MB PSRAM
