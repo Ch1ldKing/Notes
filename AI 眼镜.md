@@ -57,6 +57,7 @@ cpu制程：4nm
 AI引擎：Qualcomm® Hexagon™ V66K处理器
 操作系统支持：Wear OS，RTOS，Android
 接口：屏幕接口MIPI-DSI，存储支持DDR的QSPI，通用USB2.0
+电源管理IC
 ![image.png](https://s2.loli.net/2024/09/25/zIZckAOngjX7xR3.png)
 做实验专用的开发套件：
 https://www.thundercomm.com/product/w5-development-kit/
@@ -64,7 +65,9 @@ https://www.thundercomm.com/product/w5-development-kit/
 # Snapdragon XR2+ Gen 2 Platform
 设备端 AI，Wi-Fi 7
 # Snapdragon AR2 Gen 1 Platform
+设备端 AI
 # Snapdragon AR1 Gen 1 Platform
+设备端 AI
 # Snapdragon Wear 4100+ Platform
 cpu制程：12nm
 平台总大小：主处理器边长10 mm,PMIC(电源管理IC)28mm^2高度 0.69mm
