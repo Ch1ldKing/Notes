@@ -62,4 +62,5 @@ the construction of a generative model of one’s own mind、
 - 想象自己的未来（未来投射）。
 - 通过镜子识别自己（镜像识别综合症）。
 - 辨认自己的动作（异手综合症）。
+social-brain hypothesis and the ecological-brain hypothesis are two sides of the same coin。##politick
 At this point in our story, we now stand at the precipice of the final divergence between humankind and our closest living relative
