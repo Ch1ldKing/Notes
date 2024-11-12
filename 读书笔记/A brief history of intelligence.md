@@ -43,3 +43,5 @@ When commercializing AI systems, there is eventually a series of meetings betwee
 - 奖励预测时多巴胺水平上升。
 - 预期奖励缺失时多巴胺水平下降。
 - 多巴胺并非“愉悦信号”，而是关于“强化”的信号，驱动生物重复能提高奖励的行为。
+
+之后又出现了海马体与空间记忆等内容
