@@ -47,3 +47,9 @@ When commercializing AI systems, there is eventually a series of meetings betwee
 海马体和基底神经节共同作用，使得动物不仅能记住“做什么”，还可以记住“什么时候做”以及“在哪里做”
 neocortex
 外部世界的模拟模型：直接感知外部环境时仍然构想和表示周围环境
+自我模型：模拟动物自身的运动、内部状态和意图
+我们今天所理解的“思维”起源于**模拟与想象的能力**
+反事实学习，虚拟试错
+智能思维的起点
+
+Theory of mind: inferring intent and knowledge of others Imitation learning: acquiring novel skills through observation Anticipating future needs: taking an action now to satisfy a want in the future, even though I do not want it now
