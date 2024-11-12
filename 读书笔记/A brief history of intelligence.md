@@ -45,3 +45,5 @@ When commercializing AI systems, there is eventually a series of meetings betwee
 - 多巴胺并非“愉悦信号”，而是关于“强化”的信号，驱动生物重复能提高奖励的行为。
 基底神经节抑制无效行为，允许潜在有益的行为
 海马体和基底神经节共同作用，使得动物不仅能记住“做什么”，还可以记住“什么时候做”以及“在哪里做”
+neocortex
+外部世界的模拟模型：直接感知外部环境时仍然构想和表示周围环境
