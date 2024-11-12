@@ -53,3 +53,13 @@ neocortex
 智能思维的起点
 
 Theory of mind: inferring intent and knowledge of others Imitation learning: acquiring novel skills through observation Anticipating future needs: taking an action now to satisfy a want in the future, even though I do not want it now
+the construction of a generative model of one’s own mind、
+进一步进化，
+![image.png](https://s2.loli.net/2024/11/13/9DSFOvegQ5PNlU1.png)
+
+灵长类的这些新脑区不仅用于模拟他人的心智，还用于：
+
+- 想象自己的未来（未来投射）。
+- 通过镜子识别自己（镜像识别综合症）。
+- 辨认自己的动作（异手综合症）。
+At this point in our story, we now stand at the precipice of the final divergence between humankind and our closest living relative
