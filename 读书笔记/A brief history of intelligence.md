@@ -64,3 +64,7 @@ the construction of a generative model of one’s own mind、
 - 辨认自己的动作（异手综合症）。
 social-brain hypothesis and the ecological-brain hypothesis are two sides of the same coin。##politick
 At this point in our story, we now stand at the precipice of the final divergence between humankind and our closest living relative
+
+尽管这些模型在文本预测和语言生成方面有巨大进步，但它们缺乏人类语言理解背后的**内在模拟能力（simulating）**和**对他人心智的建模能力（mentalizing）**。这些能力是人类智力的核心，使得我们能够以语言为窗口，推演世界规则，理解他人意图，建立深层次的因果关系模型。
+
+随着GPT-4的发布，通过额外的训练和强化学习，它在回答常识和逻辑问题方面表现出更好的能力，但仍未实现真正的人类式思维。这段强调了，尽管大语言模型的发展极为迅速，其核心机制仍与人类智力存在根本差异。真正类人AI的未来，需要突破语言模型的局限，整合对现实世界和他人心智的模拟能力。
