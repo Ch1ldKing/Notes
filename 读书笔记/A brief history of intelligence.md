@@ -18,3 +18,5 @@ When commercializing AI systems, there is eventually a series of meetings betwee
 大型多细胞生命:神经元的出现，然后是电脉冲和化学传递信号
 动物与真菌分道扬镳时，动物选择了捕猎多细胞猎物的生存策略，而真菌则依靠外部消化等待有机物死亡。捕猎的需求推动了神经元的进化，使动物能够快速、精准地感知和响应外部刺激。
 智慧最初的萌芽，也为接下来的大脑进化拉开了序幕
+## Steering: and the First Bilaterians
+![image.png](https://s2.loli.net/2024/11/13/LwvOxTSHBnzCGQo.png)
