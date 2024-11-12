@@ -21,3 +21,5 @@ When commercializing AI systems, there is eventually a series of meetings betwee
 ## Steering: and the First Bilaterians
 ![image.png](https://s2.loli.net/2024/11/13/LwvOxTSHBnzCGQo.png)
 ![image.png](https://s2.loli.net/2024/11/13/L3M79ai1CeXBNPW.png)
+几乎所有动物都遵循一个共同的双侧对称身体结构（bilateral symmetry）：前端有大脑、口和感官器官，后端排泄废物。双侧对称体型的进化主要为了适应捕猎和导航需求，与径向对称（radial symmetry）的动物（如珊瑚、水母）形成鲜明对比。径向对称动物通常依赖静止等待食物，而双侧对称体型使动物可以更高效地移动和转向
+这些生物具备简单的导航能力，通过感知气味浓度的变化来寻找食物或避开危险。它们的导航规则简单却有效：气味增加时继续前进，气味减少时转弯。这种“转向导航”能力来源于大脑对双侧对称身体的控制
