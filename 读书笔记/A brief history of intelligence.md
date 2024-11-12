@@ -8,3 +8,5 @@ We need to ground our understanding of how the brain works and how it evolved in
 
 - 大脑可以为我们提供构建类人智能的灵感；
 - AI也可以帮助我们理解大脑。如果我们认为大脑某部分使用某种算法，但当我们将其应用于机器时无法奏效，这表明大脑可能并非以此方式运作。反之，如果某种算法在AI系统中运行良好，同时其特性与动物大脑特性存在相似之处，则可能说明大脑确实以此方式工作。
+Richard Feynman left the following on a blackboard shortly before his death: “What I cannot create, I do not understand.”
+
