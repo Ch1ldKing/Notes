@@ -20,3 +20,4 @@ When commercializing AI systems, there is eventually a series of meetings betwee
 智慧最初的萌芽，也为接下来的大脑进化拉开了序幕
 ## Steering: and the First Bilaterians
 ![image.png](https://s2.loli.net/2024/11/13/LwvOxTSHBnzCGQo.png)
+![image.png](https://s2.loli.net/2024/11/13/L3M79ai1CeXBNPW.png)
