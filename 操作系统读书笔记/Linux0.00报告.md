@@ -70,15 +70,15 @@ lgdt_opcode:
 此处使用默认的中断处理程序ignore_int，通过循环初始填充256个IDT
 ```asm
 setup_idt:
-    lea ignore_int, %edx       #EDX
+    lea ignore_int, %edx       #EDX高16位为中断处理程序的高16位
     movl $0x00080000, %eax     #EAX高16位为代码段选择子，用于指向描述符
     movw %dx, %ax              #EAX低16位为中断处理程序的低16位
-    movw $0x8E00, %dx          #中断门，EDX的高16位为描述符类型
+    movw $0x8E00, %dx          #中断门，EDX的低16位为描述符类型
     lea idt, %edi              #EDI指向IDT起始地址
     mov $256, %ecx             #ECX计数，填充256个IDT描述符
 rp_sidt:
     movl %eax, (%edi)
-    movl %edx, 4(%edi)         #高16位为
+    movl %edx, 4(%edi)         #高16位为中断处理程序
     addl $8, %edi              #指向下一个EDI
     dec %ecx                   #减一
     jne rp_sidt
@@ -89,3 +89,20 @@ lidt_opcode:
 	.word 256*8-1	
 	.long idt		
 ```
+##### IDT执行示例：
+假设中断向量 `0x20` 对应的 IDT 描述符如下：
+
+|字段|值|
+|---|---|
+|Offset (Low)|`0x1234`|
+|Segment Selector|`0x0008`|
+|Reserved|`0x00`|
+|Type and Attr.|`0x8E00`|
+|Offset (High)|`0x5678`|
+
+当中断 `0x20` 发生时：
+
+1. CPU 读取 IDT 描述符：
+    - 加载 `Segment Selector` (`0x0008`) 到 `CS`。
+    - 加载 `Offset` (`0x56781234`) 到 `EIP`。
+2. CPU 使用 `0x0008` 查找 GDT，找到内核代码段的描述符。
