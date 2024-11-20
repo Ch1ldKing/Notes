@@ -224,7 +224,7 @@ task1:
 ### 6. 当任务进行系统调用时，即 `int 0x80` 时，记录栈的变化情况
 执行`int $0x80`之前，可以注意到int 0x80的下一条指令地址是`0x10eb`
 ![image.png](https://s2.loli.net/2024/11/20/jROxtes1EapMhA9.png)
-执行`int $0x80`之后，yo
+执行`int $0x80`之后，用户模式的SS:ESP，EFLAGS，CS:EIP都被压栈
 ![image.png](https://s2.loli.net/2024/11/20/wOLG7W3kc2vHnCY.png)
 
 
