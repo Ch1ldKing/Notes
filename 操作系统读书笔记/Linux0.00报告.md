@@ -25,5 +25,8 @@ sudo make，sudo make install
    ![image.png](https://s2.loli.net/2024/11/20/BLhnMe4bk1HyZrV.png)
 ## 3. 执行bochs仿真程序
 1. 先了解.bxrc文件，这是bochs的配置文件
+   `floppya: 1_44="Image", status=inserted`表明是使用Image软盘镜像文件，a:为软盘设备的意思
+   `boot: a`为从软盘启动，`boot: c`为从硬盘启动
+   
 2. 执行`bochs -q -f linux000_gui.bxrc`，报错![image.png](https://s2.loli.net/2024/11/20/w72cnqAIhNPVej9.png)
    执行`sudo apt install libcanberra-gtk-module`，然后再次运行成功
