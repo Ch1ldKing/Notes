@@ -106,6 +106,18 @@ lgdt_opcode:
 	.word (end_gdt-gdt)-1	#计算GDT大小，按16位存储
 	.long gdt		        #存储基地址，按32位整型存储
 ```
+#### 4. 设置定时中断
+设置8253定时
+```asm
+movb $0x36, %al
+movl $0x43, %edx
+outb %al, %dx
+movl $11930, %eax        # Timer frequency 100Hz
+movl $0x40, %edx
+outb %al, %dx
+movb %ah, %al
+outb %al, %dx
+```
 #### 4. 设置LDT和TSS
 该head.s设置了两个任务，各具有一个LDT和TSS
 ```asm
