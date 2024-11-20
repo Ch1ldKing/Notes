@@ -213,4 +213,6 @@ task1:
 而EIP是下一条指令的线性地址（offset），所以**下一条指令地址为CS+EIP**。
 所以pc根据`CS:EIP`找到下一条指令。本处即为用户代码段task0
 ### 5. 记录 `iret` 执行前后，栈是如何变化的？
-执行iret之前
+执行iret之前的状态如下图，把问题3中提到的用户模式地址压入栈![image.png](https://s2.loli.net/2024/11/20/8wCtAHfaLvgZpRS.png)
+执行iret之后
+![image.png](https://s2.loli.net/2024/11/20/mW8GVDbvO5Tznjk.png)
