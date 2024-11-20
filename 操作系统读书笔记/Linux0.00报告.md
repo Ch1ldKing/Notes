@@ -106,4 +106,20 @@ lgdt_opcode:
 	.word (end_gdt-gdt)-1	#计算GDT大小，按16位存储
 	.long gdt		        #存储基地址，按32位整型存储
 ```
-#### 4. 设置TSS和LDT
+#### 4. 设置LDT和TSS
+该head.s设置了两个任务，各具有一个LDT和TSS
+```asm
+ldt0:	.quad 0x0000000000000000
+	.quad 0x00c0fa00000003ff	# 0x0f, base = 0x00000
+	.quad 0x00c0f200000003ff	# 0x17
+
+tss0:	.long 0 			/* back link */
+	.long krn_stk0, 0x10		/* esp0, ss0 */
+	.long 0, 0, 0, 0, 0		/* esp1, ss1, esp2, ss2, cr3 */
+	.long 0, 0, 0, 0, 0		/* eip, eflags, eax, ecx, edx */
+	.long 0, 0, 0, 0, 0		/* ebx esp, ebp, esi, edi */
+	.long 0, 0, 0, 0, 0, 0 		/* es, cs, ss, ds, fs, gs */
+	.long LDT0_SEL, 0x8000000	/* ldt, trace bitmap */
+
+	.fill 128,4,0
+```
