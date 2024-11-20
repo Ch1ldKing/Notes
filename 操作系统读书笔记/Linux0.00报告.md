@@ -63,6 +63,6 @@ setup_gdt:
     ret
 
 lgdt_opcode:
-	.word (end_gdt-gdt)-1	#计算GDT大小
-	.long gdt		        #存储基地址，按
+	.word (end_gdt-gdt)-1	#计算GDT大小，按16位存储
+	.long gdt		        #存储基地址，按32位整型存储
 ```
