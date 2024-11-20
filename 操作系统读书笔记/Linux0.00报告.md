@@ -26,4 +26,4 @@ sudo make，sudo make install
 ## 3. 执行bochs仿真程序
 1. 先了解.bxrc文件，这是bochs的配置文件
 2. 执行`bochs -q -f linux000_gui.bxrc`，报错![image.png](https://s2.loli.net/2024/11/20/w72cnqAIhNPVej9.png)
-   执行`sudo apt install libcanberra-gtk-module`
+   执行`sudo apt install libcanberra-gtk-module`，然后再次运行成功
