@@ -30,6 +30,7 @@ sudo make，sudo make install
    - `vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest`选择机器的VGA Bios
    - `floppya: 1_44="Image", status=inserted`表明是使用Image软盘镜像文件，a:为软盘设备的意思
    - `boot: a`为从软盘启动，`boot: c`为从硬盘启动
-   
-2. 执行`bochs -q -f linux000_gui.bxrc`，报错![image.png](https://s2.loli.net/2024/11/20/w72cnqAIhNPVej9.png)
+   - `log: bochsout.txt`输出日志文件
+   - `display_library: x, options="gui_debug"`配置图形化界面
+1. 执行`bochs -q -f linux000_gui.bxrc`，报错![image.png](https://s2.loli.net/2024/11/20/w72cnqAIhNPVej9.png)
    执行`sudo apt install libcanberra-gtk-module`，然后再次运行成功
