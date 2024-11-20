@@ -222,5 +222,8 @@ task1:
 2. 弹出EFLAGS的值，为用户模式下标志寄存器的值
 3. 弹出ESP和SS的值，为用户模式下栈的地址，`SS:ESP`
 ### 6. 当任务进行系统调用时，即 `int 0x80` 时，记录栈的变化情况
+执行`int $0x80`之前
 ![image.png](https://s2.loli.net/2024/11/20/jROxtes1EapMhA9.png)
+执行`int $0x80`之后
+![image.png](https://s2.loli.net/2024/11/20/Ndztl2np4myRsGx.png)
 
