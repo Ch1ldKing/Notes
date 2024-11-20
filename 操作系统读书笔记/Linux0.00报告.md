@@ -55,18 +55,7 @@ startup_32:
     mov %ax, %ds
     lss init_stack, %esp
 ```
-#### 2. 设置GDT
-通过`lgdt`命令，将GDT的大小和位置加载到GDTR寄存器
-```asm
-setup_gdt:
-    lgdt lgdt_opcode
-    ret
-
-lgdt_opcode:
-	.word (end_gdt-gdt)-1	#计算GDT大小，按16位存储
-	.long gdt		        #存储基地址，按32位整型存储
-```
-#### 3. 设置IDT
+#### 2. 设置IDT
 此处使用默认的中断处理程序ignore_int，通过循环初始填充256个IDT
 ```asm
 setup_idt:
@@ -106,4 +95,15 @@ lidt_opcode:
     - 加载 *中断处理程序* (`0x56781234`) 到 EIP寄存器
 2. CPU 使用 `0x0008` 查找 GDT，找到描述符，此处是内核代码段
 3. 跳转到 `CS:EIP = 0x0008:0x56781234`，开始执行中断处理程序
-#### 设置TSS和LDT
+#### 3. 设置GDT
+通过`lgdt`命令，将GDT的大小和位置加载到GDTR寄存器
+```asm
+setup_gdt:
+    lgdt lgdt_opcode
+    ret
+
+lgdt_opcode:
+	.word (end_gdt-gdt)-1	#计算GDT大小，按16位存储
+	.long gdt		        #存储基地址，按32位整型存储
+```
+#### 4. 设置TSS和LDT
