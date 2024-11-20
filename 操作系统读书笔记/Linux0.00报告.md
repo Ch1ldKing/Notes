@@ -39,4 +39,5 @@ sudo make，sudo make install
 1. 先打断点`b 0`，因为head.s被引导程序放置在此处
 2. 运行到head.s的末尾，查看GDT表，观察各个段的内存起始和大小![image.png](https://s2.loli.net/2024/11/20/G1aoQ9lmjiHcJhS.png)
 3. 找到57-62行代码所在内存地址，断电`b 0x9d`，然后单步调试![image.png](https://s2.loli.net/2024/11/20/n9tJCk57veASQYU.png)可以看到eflags被操作
-4. 
+## 回答问题
+### 1. 请简述 `head.s` 的工作原理
