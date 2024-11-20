@@ -180,3 +180,5 @@ task1:
     jmp task1
 ```
 ### 2. 请记录 `head.s` 的内存分布状况，写明每个数据段，代码段，栈段的起始与终止的内存地址
+运行到head.s的末尾，查看GDT表，观察各个段的内存起始和大小![image.png](https://s2.loli.net/2024/11/20/G1aoQ9lmjiHcJhS.png)
+可以看到代码段起始地址是0x0，大小是0x7FFFFF
