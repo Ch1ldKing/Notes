@@ -123,6 +123,12 @@ movw $timer_interrupt, %ax #调用定时中断处理程序，用于切换task0�
 #### 4. 设置LDT和TSS
 该head.s设置了两个任务，各具有一个LDT和TSS
 ```asm
+movl $TSS0_SEL, %eax
+ltr %ax                         #TSS选择子加载到TR任务寄存器
+
+movl $LDT0_SEL, %eax 
+lldt %ax
+
 ldt0:	.quad 0x0000000000000000
 	.quad 0x00c0fa00000003ff	# 0x0f, base = 0x00000
 	.quad 0x00c0f200000003ff	# 0x17
