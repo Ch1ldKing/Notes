@@ -78,7 +78,7 @@ setup_idt:
     mov $256, %ecx             #ECX计数，填充256个IDT描述符
 rp_sidt:
     movl %eax, (%edi)
-    movl %edx, 4(%edi)
+    movl %edx, 4(%edi)         #高16位为
     addl $8, %edi              #指向下一个EDI
     dec %ecx                   #减一
     jne rp_sidt
