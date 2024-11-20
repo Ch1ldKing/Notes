@@ -37,5 +37,8 @@ sudo make，sudo make install
 3. **查看`0x7c00`** ：重启bochs，输入命令`b 0x7c00`在该处打断点，然后点击continue，观察到的命令就是`0x7c00`处装载的内容，也就是**MBR主引导记录**，将硬盘中第一个扇区的内容中的引导加载程序(boot.s)和分区表加载到内存地址`0x7c00`![image.png](https://s2.loli.net/2024/11/20/9VbODe1ckhT6NCA.png)
 ## 4. 调试`head.s`
 1. 先打断点`b 0`，因为head.s被引导程序放置在此处
-2. 找到引导程序的
+2. 运行到head.s的末尾，查看GDT表，观察各个段的内存起始和大小
+   
+
+3. 
 
