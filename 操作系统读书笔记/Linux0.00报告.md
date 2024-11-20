@@ -70,8 +70,8 @@ lgdt_opcode:
 此处使用默认的中断处理程序ignore_int，通过循环初始填充256个IDT
 ```asm
 setup_idt:
-    lea ignore_int, %edx
-    movl $0x00080000, %eax     #EAX高16位为
+    lea ignore_int, %edx       #EDX
+    movl $0x00080000, %eax     #EAX高16位为代码段选择子，用于指向描述符
     movw %dx, %ax              #EAX低16位为中断处理程序的低16位
     movw $0x8E00, %dx          #中断门，EDX的高16位为描述符类型
     lea idt, %edi              #EDI指向IDT起始地址
