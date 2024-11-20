@@ -107,13 +107,13 @@ lgdt_opcode:
 	.long gdt		        #存储基地址，按32位整型存储
 ```
 #### 4. 设置定时中断
-设置8253定时
+设置8253定时芯片，
 ```asm
 movb $0x36, %al
 movl $0x43, %edx
 outb %al, %dx
-movl $11930, %eax        # Timer frequency 100Hz
-movl $0x40, %edx
+movl $11930, %eax        #时钟频率100Hz
+movl $0x40, %edx         #通道0设置成每10ms发送中断请求信号
 outb %al, %dx
 movb %ah, %al
 outb %al, %dx
