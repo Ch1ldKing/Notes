@@ -55,3 +55,10 @@ startup_32:
     mov %ax, %ds
     lss init_stack, %esp
 ```
+#### 2. 设置GDT
+
+```asm
+setup_gdt:
+    lgdt lgdt_opcode
+    ret
+```
