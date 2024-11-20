@@ -34,4 +34,4 @@ sudo make，sudo make install
    - `display_library: x, options="gui_debug"`配置图形化界面
 2. 执行`bochs -q -f linux000_gui.bxrc`，报错![image.png](https://s2.loli.net/2024/11/20/w72cnqAIhNPVej9.png)
    执行`sudo apt install libcanberra-gtk-module`，然后再次运行成功
-3. **查看`0x7c00`** ：重启bochs，输入命令`b 0x7c00`在该处打断点，然后点击continue，观察到的命令就是`0x7c00`处装载的内容，也就是**MBR主引导记录**，将硬盘中第一个扇区的内容中的引导加载程序和分区表加载到内存地址0x7c00
+3. **查看`0x7c00`** ：重启bochs，输入命令`b 0x7c00`在该处打断点，然后点击continue，观察到的命令就是`0x7c00`处装载的内容，也就是**MBR主引导记录**，将硬盘中第一个扇区的内容中的引导加载程序和分区表加载到内存地址`0x7c00`
