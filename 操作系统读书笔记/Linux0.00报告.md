@@ -48,7 +48,7 @@ sudo make，sudo make install
 4. 实现基本的任务切换功能（Task 0 和 Task 1 之间切换）
 5. 支持系统调用机制
 #### 1. 初始化环境
-将GDT数据段选择子加载到段寄存器DS,SS
+将GDT数据段选择子加载到段寄存器DS，然后初始化SS
 ```asm
 startup_32:
     movl $0x10, %eax
