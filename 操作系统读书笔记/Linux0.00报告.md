@@ -120,6 +120,7 @@ outb %al, %dx
 movl $0x00080000, %eax
 movw $timer_interrupt, %ax #调用定时中断处理程序，用于切换task0和1
 ```
+#### 5.设置陷阱门
 #### 5. 设置LDT和TSS
 该head.s设置了两个任务，各具有一个LDT和TSS
 ```asm
