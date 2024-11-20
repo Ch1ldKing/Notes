@@ -89,16 +89,16 @@ lidt_opcode:
 	.word 256*8-1	
 	.long idt		
 ```
-##### IDT执行示例：
+##### 中断执行示例：
 假设中断向量 `0x20` 对应的 IDT 描述符如下：
 
-|字段|值|
-|---|---|
-|Offset (Low)|`0x1234`|
-|Segment Selector|`0x0008`|
-|Reserved|`0x00`|
-|Type and Attr.|`0x8E00`|
-|Offset (High)|`0x5678`|
+| 字段```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp | 值        |
+| -------------------------------------- | -------- |
+| 中断处理程序 (低16位)                          | `0x1234` |
+| Segment Selector                       | `0x0008` |
+| Reserved                               | `0x00`   |
+| Type and Attr.                         | `0x8E00` |
+| Offset (High)                          | `0x5678` |
 
 当中断 `0x20` 发生时：
 
