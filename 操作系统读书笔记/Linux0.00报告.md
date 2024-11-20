@@ -56,7 +56,7 @@ startup_32:
     lss init_stack, %esp
 ```
 #### 2. 设置GDT
-通过`lgdt`命令，将GDT
+通过`lgdt`命令，将GDT的大小和位置加载到GDTR寄存器
 ```asm
 setup_gdt:
     lgdt lgdt_opcode
@@ -66,3 +66,4 @@ lgdt_opcode:
 	.word (end_gdt-gdt)-1	#计算GDT大小，按16位存储
 	.long gdt		        #存储基地址，按32位整型存储
 ```
+#### 3. 设置IDT
