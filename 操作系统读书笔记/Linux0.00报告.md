@@ -5,3 +5,7 @@
 然后就可以正常编译了
 sudo make，sudo make install
 ![image.png](https://s2.loli.net/2024/11/19/u19QpmKVXzSZcMW.png)
+# Step
+## 编译Linux000
+1. 先安装as86编译程序`sudo apt install bin86`
+2. 
