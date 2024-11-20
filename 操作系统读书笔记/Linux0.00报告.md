@@ -67,7 +67,7 @@ lgdt_opcode:
 	.long gdt		        #存储基地址，按32位整型存储
 ```
 #### 3. 设置IDT
-
+此处使用默认的中断处理ignore_int，
 ```asm
 setup_idt:
     lea ignore_int, %edx
