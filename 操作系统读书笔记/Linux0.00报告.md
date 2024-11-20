@@ -67,12 +67,12 @@ lgdt_opcode:
 	.long gdt		        #存储基地址，按32位整型存储
 ```
 #### 3. 设置IDT
-此处使用默认的中断处理ignore_int，通过循环初始填充256个IDT
+此处使用默认的中断处理程序ignore_int，通过循环初始填充256个IDT
 ```asm
 setup_idt:
     lea ignore_int, %edx
     movl $0x00080000, %eax
-    movw %dx, %ax
+    movw %dx, %ax              #中断处理程序的低16位
     movw $0x8E00, %dx          #中断门
     lea idt, %edi
     mov $256, %ecx             #ECX计数，填充256个IDT描述符
