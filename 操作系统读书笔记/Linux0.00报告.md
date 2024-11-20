@@ -38,5 +38,7 @@ sudo make，sudo make install
 ## 4. 调试`head.s`
 1. 先打断点`b 0`，因为head.s被引导程序放置在此处
 2. 运行到head.s的末尾，查看GDT表，观察各个段的内存起始和大小![image.png](https://s2.loli.net/2024/11/20/G1aoQ9lmjiHcJhS.png)
-3. 找到57-62行代码所在内存地址，断电`b 0x76`，然后单步调试![image.png](https://s2.loli.net/2024/11/20/fY7VleLF8quEBQH.png) ![image.png](https://s2.loli.net/2024/11/20/Z4UcWf6VhO3YkLu.png) 
+3. 找到57-62行代码所在内存地址，断电`b 0x76`，然后单步调试![image.png](https://s2.loli.net/2024/11/20/fY7VleLF8quEBQH.png)![image.png](https://s2.loli.net/2024/11/20/Z4UcWf6VhO3YkLu.png)![image.png](https://s2.loli.net/2024/11/20/Ggtc7B8emSUOdQA.png) ![image.png](https://s2.loli.net/2024/11/20/gHd9ebasQNJtIXz.png)
+
+
 
