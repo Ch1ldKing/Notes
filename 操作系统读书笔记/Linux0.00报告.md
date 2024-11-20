@@ -195,4 +195,6 @@ task1:
 ### 3. 简述 `head.s` 57 至 62 行在做什么？
 找到57-62行代码所在内存地址，断电`b 0x9d`，然后单步调试，可以看到eflags被操作![image.png](https://s2.loli.net/2024/11/20/n9tJCk57veASQYU.png)这几行代码是从**内核模式切换到用户模式**
 1. `pushl $0x17`将0x17压入栈，0x17为00010111，索引为2，权限为3，表示用户模式的数据段
-2. `pushl $init_stack`
+2. `pushl $init_stack`将用户模式的栈压入栈
+3. `pushfl`将当前标志寄存器EFLAGS压入栈
+3. `pushl $0x0f`将0x0F压入栈，0x0F为00001
