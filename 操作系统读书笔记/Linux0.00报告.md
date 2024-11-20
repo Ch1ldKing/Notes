@@ -73,7 +73,7 @@ setup_idt:
     lea ignore_int, %edx
     movl $0x00080000, %eax
     movw %dx, %ax
-    movw $0x8E00, %dx
+    movw $0x8E00, %dx          #中断门
     lea idt, %edi
     mov $256, %ecx
 rp_sidt:
