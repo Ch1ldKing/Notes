@@ -1,11 +1,4 @@
-# Problem
-![2cd82d29d4dca90750a5dfaaddb87d3.png](https://s2.loli.net/2024/11/19/hC4QdJiVpF8Zucm.png)
-修改一下出问题的代码，在config.cc中
-![image.png](https://s2.loli.net/2024/11/19/rJVmTxjyOQp1AE2.png)
-然后就可以正常编译了
-sudo make，sudo make install
-![image.png](https://s2.loli.net/2024/11/19/u19QpmKVXzSZcMW.png)
-# Step
+# 实验准备和步骤
 ## 1. 安装bochs
 实验环境：ubuntu 22.04.5+bochs 2.6
 1. 安装依赖`sudo apt-get install build-essential xorg-dev libgtk2.0-dev`
@@ -39,7 +32,7 @@ sudo make，sudo make install
 1. 先打断点`b 0`，因为head.s被引导程序放置在此处
 2. 运行到head.s的末尾，查看GDT表，观察各个段的内存起始和大小![image.png](https://s2.loli.net/2024/11/20/G1aoQ9lmjiHcJhS.png)
 3. 找到57-62行代码所在内存地址，断电`b 0x9d`，然后单步调试![image.png](https://s2.loli.net/2024/11/20/n9tJCk57veASQYU.png)可以看到eflags被操作
-## 回答问题
+# 回答问题
 ### 1. 请简述 `head.s` 的工作原理
 #### head.s做了什么？
 1. 初始化系统环境，包括全局描述符表（GDT）、中断描述符表（IDT）、以及任务状态段（TSS）和局部描述符表（LDT）
@@ -166,4 +159,24 @@ pushl $0x0f          # 用户模式的代码段选择子
 pushl $task0         # 用户模式代码的入口地址
 iret                 # 切换到用户模式
 ```
-#### 7. 配置用户模式任务
+#### 7. 定义用户模式任务
+```asm
+task0:
+    movl $0x17, %eax
+    movw %ax, %ds
+    movb $65, %al              # 打印 'A' 
+    int $0x80
+    movl $0xfff, %ecx
+1:  loop 1b
+    jmp task0
+
+task1:
+    movl $0x17, %eax
+    movw %ax, %ds
+    movb $66, %al              # 打印 'B'
+    int $0x80
+    movl $0xfff, %ecx
+1:  loop 1b
+    jmp task1
+```
+### 2. 请记录 `head.s` 的内存分布状况，写明每个数据段，代码段，栈段的起始与终止的内存地址
