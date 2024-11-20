@@ -71,10 +71,10 @@ lgdt_opcode:
 ```asm
 setup_idt:
     lea ignore_int, %edx
-    movl $0x00080000, %eax
-    movw %dx, %ax              #中断处理程序的低16位
-    movw $0x8E00, %dx          #中断门
-    lea idt, %edi
+    movl $0x00080000, %eax     #EAX高16位为
+    movw %dx, %ax              #EAX低16位为中断处理程序的低16位
+    movw $0x8E00, %dx          #中断门，EDX的高16位为描述符类型
+    lea idt, %edi              #EDI指向IDT起始地址
     mov $256, %ecx             #ECX计数，填充256个IDT描述符
 rp_sidt:
     movl %eax, (%edi)
