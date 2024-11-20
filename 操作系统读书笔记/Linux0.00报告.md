@@ -106,8 +106,8 @@ lgdt_opcode:
 	.word (end_gdt-gdt)-1	#计算GDT大小，按16位存储
 	.long gdt		        #存储基地址，按32位整型存储
 ```
-#### 4. 设置定时中断
-设置8253定时芯片
+#### 4. 设置定时中断和系统中断
+先设置8253定时芯片，然后初始化定时中断描述符和系统调用中断描述符
 ```asm
 movb $0x36, %al
 movl $0x43, %edx
@@ -117,8 +117,20 @@ movl $0x40, %edx           #通道0设置成每10ms发送中断请求信号
 outb %al, %dx
 movb %ah, %al
 outb %al, %dx
-movl $0x00080000, %eax
-movw $timer_interrupt, %ax #调用定时中断处理程序，用于切换task0和1
+
+movl $0x00080000, %eax     #定时中断描述符
+movw $timer_interrupt, %ax 
+movw $0x8E00, %dx
+movl $0x08, %ecx             
+lea idt(,%ecx,8), %esi
+movl %eax,(%esi)
+movl %edx,4(%esi)
+movw $system_interrupt, %ax
+movw $0xef00, %dx
+movl $0x80, %ecx
+lea idt(,%ecx,8), %esi
+movl %eax,(%esi)
+movl %edx,4(%esi)
 ```
 #### 5.设置陷阱门
 #### 5. 设置LDT和TSS
