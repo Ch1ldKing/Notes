@@ -41,6 +41,7 @@ sudo make，sudo make install
 3. 找到57-62行代码所在内存地址，断电`b 0x9d`，然后单步调试![image.png](https://s2.loli.net/2024/11/20/n9tJCk57veASQYU.png)可以看到eflags被操作
 ## 回答问题
 ### 1. 请简述 `head.s` 的工作原理
+#### head.szuo'le
 1. 初始化系统环境，包括全局描述符表（GDT）、中断描述符表（IDT）、以及任务状态段（TSS）和局部描述符表（LDT）
 2. 配置并开启定时器中断
 3. 实现从内核模式到用户模式的切换
