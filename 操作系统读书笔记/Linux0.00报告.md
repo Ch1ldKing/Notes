@@ -24,3 +24,4 @@ sudo make，sudo make install
 2. 在linux000 code下执行`sudo make`，得到image文件，把它移动到/linux000下，和bochs配置文件放在一起
    ![image.png](https://s2.loli.net/2024/11/20/BLhnMe4bk1HyZrV.png)
 ## 3. 执行bochs仿真程序
+1. 先了解.bxrc文件，这是bochs的配置文件
