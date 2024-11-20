@@ -107,32 +107,31 @@ lgdt_opcode:
 	.long gdt		        #存储基地址，按32位整型存储
 ```
 #### 4. 设置定时中断和系统中断
-先设置8253定时芯片，然后初始化定时中断描述符和系统调用中断描述符
+先设置8253定时芯片，然后初始化定时中断描述符和系统调用中断描述符，填充到对应IDT描述符
 ```asm
 movb $0x36, %al
 movl $0x43, %edx
 outb %al, %dx
-movl $11930, %eax          #时钟频率100Hz
-movl $0x40, %edx           #通道0设置成每10ms发送中断请求信号
+movl $11930, %eax           #时钟频率100Hz
+movl $0x40, %edx            #通道0设置成每10ms发送中断请求信号
 outb %al, %dx
 movb %ah, %al
 outb %al, %dx
 
-movl $0x00080000, %eax     #定时中断描述符
+movl $0x00080000, %eax      #定时中断描述符
 movw $timer_interrupt, %ax 
 movw $0x8E00, %dx
 movl $0x08, %ecx             
 lea idt(,%ecx,8), %esi
 movl %eax,(%esi)
 movl %edx,4(%esi)
-movw $system_interrupt, %ax
+movw $system_interrupt, %ax #系统调用中断描述符
 movw $0xef00, %dx
 movl $0x80, %ecx
 lea idt(,%ecx,8), %esi
 movl %eax,(%esi)
 movl %edx,4(%esi)
 ```
-#### 5.设置陷阱门
 #### 5. 设置LDT和TSS
 该head.s设置了两个任务，各具有一个LDT和TSS
 ```asm
@@ -142,12 +141,14 @@ ltr %ax                         #TSS选择子加载到TR寄存器
 movl $LDT0_SEL, %eax 
 lldt %ax                        #LDT选择子加载到LDTR寄存器
 
-ldt0:	.quad 0x0000000000000000
-	.quad 0x00c0fa00000003ff	# 0x0f, base = 0x00000
-	.quad 0x00c0f200000003ff	# 0x17
+ldt0:	
+	.quad 0x0000000000000000
+	.quad 0x00c0fa00000003ff	
+	.quad 0x00c0f200000003ff	
 
-tss0:	.long 0 			/* back link */
-	.long krn_stk0, 0x10		/* esp0, ss0 */
+tss0:	
+	.long 0 			
+	.long krn_stk0, 0x10		
 	.long 0, 0, 0, 0, 0		/* esp1, ss1, esp2, ss2, cr3 */
 	.long 0, 0, 0, 0, 0		/* eip, eflags, eax, ecx, edx */
 	.long 0, 0, 0, 0, 0		/* ebx esp, ebp, esi, edi */
@@ -156,3 +157,4 @@ tss0:	.long 0 			/* back link */
 
 	.fill 128,4,0
 ```
+#### 6. 设置
