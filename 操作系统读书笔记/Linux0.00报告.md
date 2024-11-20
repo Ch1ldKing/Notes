@@ -201,5 +201,5 @@ task1:
 5. `pushl $task0` 将用户模式的任务地址压入栈（此处是从task0开始执行）
 6. `iret`中断返回，这一步做了以下几件事：
 	1. 恢复 SS 和 ESP：从栈中弹出 `0x17` 和 `init_stack`，分别加载到 SS和ESP。
-	2. 恢复 **EFLAGS**：弹出标志寄存器值，恢复到 **EFLAGS**。
-	3. 恢复 **CS** 和 **EIP**：从栈中弹出 `0x0F` 和 `task0`，分别加载到 **CS** 和 **EIP**。
+	2. 恢复 EFLAGS：弹出标志寄存器值，恢复到EFLAGS
+	3. 恢复 CS 和 EIP：从栈中弹出 `0x0F` 和 `task0`，分别加载到 CS 和 EIP。
