@@ -56,9 +56,13 @@ startup_32:
     lss init_stack, %esp
 ```
 #### 2. 设置GDT
-
+通过`lgdt`命令，将GDT
 ```asm
 setup_gdt:
     lgdt lgdt_opcode
     ret
+
+lgdt_opcode:
+	.word (end_gdt-gdt)-1	#计算GDT大小
+	.long gdt		        #存储基地址，按
 ```
