@@ -15,6 +15,7 @@ You are an expert in Sysml Modeling and Model-based Systems Engineering. You sho
 #### Few-shot:
 It seems like a framework of Q&A, Questions are from our dataset, which is the natural language description of the task to be modeled.
 ```
+human:
 # The Banks
 
 ## Context
@@ -44,4 +45,246 @@ Suppose the financial system of a country is composed of banks.
 * Companies with a balance of more than 1 million euros in one of their accounts are considered VIP by that bank and have a number of advantages. Firstly, in a transfer between banks, the part corresponding to the account of origin or destination that is of that bank is not taxed with the corresponding 1%. Secondly, these accounts do not pay an annual maintenance fee. Only companies, and not individuals, can be considered VIP.
 
 * Finally, accounts whose holders are bank branches pay neither annual fee nor transfer commission in any bank.
+```
+```
+ai:
+{
+
+"classes": [
+
+{
+
+"name": "Bank",
+
+"attributes": [
+
+],
+
+"associations": [
+
+{
+
+"name":"BankBranches",
+
+"type": "composite",
+
+"target": "Branch",
+
+"multiplicity": "*"
+
+}
+
+]
+
+},
+
+{
+
+"name": "Branch",
+
+"attributes": [
+
+],
+
+"associations": [
+
+{
+
+"name":"Clientship",
+
+"type": "composite",
+
+"target": "Client",
+
+"multiplicity": "*"
+
+},
+
+{
+
+"name":"Management",
+
+"type": "composite",
+
+"target":"Manager",
+
+"multiplicity": "1"
+
+},
+
+{
+
+"name":"BankBranches",
+
+"type": "association",
+
+"target": "Bank",
+
+"multiplicity": "1"
+
+}
+
+]
+
+},
+
+{
+
+"name":"Client",
+
+"attributes":[
+
+],
+
+"associations":[
+
+{
+
+"name":"Clientship",
+
+"type":"association",
+
+"target":"Branch",
+
+"multiplicity":"1"
+
+},
+
+{
+
+"name":"ClientRole",
+
+"type":"association",
+
+"target":"Person",
+
+"multiplicity":"1"
+
+}
+
+]
+
+},
+
+{
+
+"name":"Manager",
+
+"attributes":[],
+
+"associations":[
+
+{
+
+"name":"Management",
+
+"type":"association",
+
+"target":"Branch",
+
+"multiplicity":"1"
+
+},
+
+{
+
+"name":"ManagerRole",
+
+"type":"association",
+
+"target":"Person",
+
+"multiplicity":"1"
+
+}
+
+]
+
+},
+
+{
+
+"name":"Person",
+
+"attributes":[
+
+{
+
+"name":"age",
+
+"type":"Integer"
+
+},
+
+{
+
+"name":"name",
+
+"type":"String"
+
+},
+
+{
+
+"name":"gender",
+
+"type":"Gender"
+
+}
+
+],
+
+"associations":[
+
+{
+
+"name":"ClientRole",
+
+"type":"association",
+
+"target":"Client",
+
+"multiplicity":"0..1"
+
+},
+
+{
+
+"name": "ManagerRole",
+
+"type": "association",
+
+"target": "Manager",
+
+"multiplicity": "0..1"
+
+}
+
+]
+
+}
+
+],
+
+"enumerations":[
+
+{
+
+"name":"Gender",
+
+"literals":[
+
+{"name":"male"},
+
+{"name":"female"},
+
+{"name":"other"}
+
+]
+
+}
+
+]
+
+}
 ```
