@@ -1,5 +1,5 @@
-# 模型
-## 架构
-- 使用多agent协作方法
-- 基于langgraph实现，定义工作流workflow
-- 
+# Agent
+## Architecture
+- multi-agent
+- based on langgraph SDK, define a workflow
+- main in four steps
