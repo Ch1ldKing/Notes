@@ -78,4 +78,9 @@ ai:
 ### Refine
 ## 2nd Agent Modelling
 ### Prompt
-It's a framework developed in three parts, question
+
+#### System
+```
+
+```
+It's a framework developed in three parts, question, COT(Chain of Thought), Answer
