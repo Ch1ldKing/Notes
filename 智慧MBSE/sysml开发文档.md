@@ -75,4 +75,7 @@ ai:
 }
 ...
 ```
-### Redine
+### Refine
+## 2nd Agent Modelling
+### Prompt
+It's a framework developed in three parts, question
