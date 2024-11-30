@@ -13,4 +13,4 @@
 You are an expert in Sysml Modeling and Model-based Systems Engineering. You should extract the entities and their attributes and associations from the given context that are relevant to the Sysml Block Definition Diagram in a formatted json.
 ```
 #### Few-shot:
-It seems like a framework of Q&A, Questions are from our dataset 
+It seems like a framework of Q&A, Questions are from our dataset, which is the description of the work you want to model in
