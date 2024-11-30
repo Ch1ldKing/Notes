@@ -83,4 +83,4 @@ ai:
 ```
 
 ```
-It's a framework developed in three parts, question, COT(Chain of Thought), Answer
+It's a framework developed in three parts: question, COT(Chain of Thought) and Answer. 
