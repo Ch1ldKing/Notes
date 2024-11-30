@@ -112,4 +112,4 @@ Suppose the financial system of a country is composed of banks.
 * The accounts have a maintenance fee of 1% per year. This means that, once a year (on January 1), each branch deducts 1% from the current balance of all its accounts. If the balance is 0 and the account is not a credit account, no money is deducted. In case of credit accounts, if the resulting balance is negative the branch will deduct 1% of the account's credit limit instead. The deducted money from the becomes the property of the branch and is stored in your account.
 ...
 ```
-The COT is here. I decompose the elements in the XML to make the llm
+The COT is here. I decompose the elements in the XML to make the llm comprehend the relationship of each element
