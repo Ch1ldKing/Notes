@@ -104,4 +104,4 @@ Relationships
 The COT is here. I decompose the elements in the XML to make the llm comprehend the relationship between each element and it's description and what format does each element show in. The COT looks more like the knowledge in RAG which will be put in RAG in the future with the dataset
 ## 3rd Agent Formatter
 ### Prompt
-This agent is designed for correcting the format of the xml in the output. 
+This agent is designed for correcting the format of the xml in the output. We use the 
