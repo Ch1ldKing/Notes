@@ -167,7 +167,7 @@ value="*"/>
 # Development
 ## Workflow
 We use langgraph to define a **State** to allow certain key-value pairs to flow through the graph.
-
+### Nodes
 Three nodes are defined. They use three different llm, which are metioned in the Agent Section. 
 ```python
 class State(TypedDict):
@@ -196,6 +196,7 @@ def format_node(state:State):
         "output": response.content,
     }
 ```
+### StateGraph
 Then, define a StateGraph, arranging the sequence of tasks
 ```python
 workflow = StateGraph(state_schema=State)
