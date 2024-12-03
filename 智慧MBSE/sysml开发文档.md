@@ -110,7 +110,7 @@ This agent is designed for correcting the format of the xml in the output. We us
 You are an expert in Sysml Modeling and Model-based Systems Engineering. You should correct the input XML diagram to the proper format.
 ```
 #### Few-shot
-```
+```xml
 The <ownedEnd> is closely related to `aggregation="composite"`. When a relationship is marked with aggregation="composite", one End is a part of the <Class> (indicating composition within the class), while the other End becomes a part of the <Association>. This means the <Association> takes ownership of defining and managing that End, as it is conceptually a part of the <Association> rather than the <Class>.
 
 <packagedElement xmi:type="uml:Class" xmi:id="_id_uml:Class_Branch"
@@ -139,4 +139,160 @@ name="Branch">
 </packagedElement>  
 
 If `aggregation="composite"` is not present, all Ends of the relationship are already defined as attributes within the associated classes. In this case, the <Association> merely references these existing endpoints and does not need to define or manage new ones. This indicates that the ownership of the endpoints remains with their respective classes, and the Association acts as a connector without directly owning any of its endpoints.
+```
+
+```
+<packagedElement xmi:type="uml:Package" xmi:id="_id_uml:Package_Banks" name="Banks">
+
+  
+
+                <packagedElement xmi:type="uml:Class" xmi:id="_id_uml:Class_Branch"
+
+                                    name="Branch">
+
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_id_uml:Property_client_Branch"
+
+                                    name="client"
+
+                                    visibility="public"
+
+                                    aggregation="composite"
+
+                                    type="_id_uml:Class_Client"
+
+                                    association="_id_uml:Association_Clientship">
+
+                        <lowerValue xmi:type="uml:LiteralUnlimitedNatural"
+
+                                    xmi:id="_id_uml:LiteralUnlimitedNatural_random"/>
+
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural"
+
+                                    xmi:id="_id_uml:LiteralUnlimitedNatural_random"
+
+                                    value="*"/>
+
+                    </ownedAttribute>
+
+                </packagedElement>
+
+  
+
+                <packagedElement xmi:type="uml:Class" xmi:id="_id_uml:Class_Client"
+
+                                    name="Client">
+
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_id_uml:Property_roleFiller_Client"
+
+                                    name="roleFiller"
+
+                                    visibility="public"
+
+                                    type="_id_uml:Class_Person"
+
+                                    association="_id_uml:Association_ClientRole"/>
+
+                </packagedElement>
+
+  
+
+                <packagedElement xmi:type="uml:Class" xmi:id="_id_uml:Class_Person"
+
+                                    name="Person">
+
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_id_uml:Property_client_Person"
+
+                                    name="client"
+
+                                    visibility="public"
+
+                                    type="_id_uml:Class_Client"
+
+                                    association="_id_uml:Association_ClientRole">
+
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_id_uml:LiteralInteger_random"/>
+
+                    </ownedAttribute>
+
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_id_uml:Property_age_Person"
+
+                                    name="age"
+
+                                    visibility="public"
+
+                                    aggregation="composite">
+
+                        <type href="#SysML_dataType.Integer"/>
+
+                    </ownedAttribute>
+
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_id_uml:Property_gender_Person"
+
+                                    name="gender"
+
+                                    visibility="public"
+
+                                    aggregation="composite"
+
+                                    type="_id_uml:Enumeration_Gender"/>
+
+                </packagedElement>
+
+  
+
+                <packagedElement xmi:type="uml:Enumeration" xmi:id="_id_uml:Enumeration_Gender"
+
+                                    name="Gender">
+
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral"
+
+                                    xmi:id="_id_uml:EnumerationLiteral_male"
+
+                                    name="male"/>
+
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral"
+
+                                    xmi:id="_id_uml:EnumerationLiteral_female"
+
+                                    name="female"/>
+
+                </packagedElement>
+
+  
+
+                <packagedElement xmi:type="uml:Association" xmi:id="_id_uml:Association_Clientship"
+
+                                    name="Clientship">
+
+                    <memberEnd xmi:idref="_id_uml:Property_client_Branch"/>
+
+                    <memberEnd xmi:idref="_id_uml:Property_branch_Clientship"/>
+
+                    <ownedEnd xmi:type="uml:Property" xmi:id="_id_uml:Property_branch_Clientship"
+
+                                name="branch"
+
+                                visibility="public"
+
+                                type="_id_uml:Class_Branch"
+
+                                association="_id_uml:Association_Clientship"/>
+
+                </packagedElement>
+
+  
+
+                <packagedElement xmi:type="uml:Association" xmi:id="_id_uml:Association_ClientRole"
+
+                                    name="ClientRole">
+
+                    <memberEnd xmi:idref="_id_uml:Property_roleFiller_Client"/>
+
+                    <memberEnd xmi:idref="_id_uml:Property_client_Person"/>
+
+                </packagedElement>
+
+  
+
+            </packagedElement>
 ```
