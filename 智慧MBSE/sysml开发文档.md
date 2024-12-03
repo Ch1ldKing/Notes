@@ -138,7 +138,9 @@ name="Branch">
 				association="_id_uml:Association_Clientship"/>
 </packagedElement>  
 
-If `aggregation="composite"` is not present, all Ends of the relationship are already defined as attributes within the associated classes. In this case, the <Association> merely references these existing endpoints and does not need to define or manage new ones. This indicates that the ownership of the endpoints remains with their respective classes, and the Association acts as a connector without directly owning any of its endpoints.
+If `aggregation="composite"` is not present, all Ends of the relationship are already defined as attributes 
+within the associated classes. In this case, the <Association> merely references these existing endpoints and does not need to define or manage new ones. 
+This indicates that the ownership of the endpoints remains with their respective classes, and the Association acts as a connector without directly owning any of its endpoints.
 ...
 ```
 
@@ -150,7 +152,8 @@ name="Branch">
 name="client"
 visibility="public"
 aggregation="composite"
-type="_id_uml:Class_Client"                                 association="_id_uml:Association_Clientship">
+type="_id_uml:Class_Client" 
+association="_id_uml:Association_Clientship">
 
 <lowerValue xmi:type="uml:LiteralUnlimitedNatural"
 xmi:id="_id_uml:LiteralUnlimitedNatural_random"/>
