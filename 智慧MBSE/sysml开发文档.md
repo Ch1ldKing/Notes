@@ -143,38 +143,23 @@ If `aggregation="composite"` is not present, all Ends of the relationship are al
 
 ```
 <packagedElement xmi:type="uml:Package" xmi:id="_id_uml:Package_Banks" name="Banks">
+<packagedElement xmi:type="uml:Class" xmi:id="_id_uml:Class_Branch"
+name="Branch">
+<ownedAttribute xmi:type="uml:Property" xmi:id="_id_uml:Property_client_Branch"
+name="client"
+visibility="public"
+aggregation="composite"
+type="_id_uml:Class_Client"                                 association="_id_uml:Association_Clientship">
 
-  
+<lowerValue xmi:type="uml:LiteralUnlimitedNatural"
+xmi:id="_id_uml:LiteralUnlimitedNatural_random"/>
+<upperValue xmi:type="uml:LiteralUnlimitedNatural"
+xmi:id="_id_uml:LiteralUnlimitedNatural_random"
+value="*"/>
 
-                <packagedElement xmi:type="uml:Class" xmi:id="_id_uml:Class_Branch"
+</ownedAttribute>
 
-                                    name="Branch">
-
-                    <ownedAttribute xmi:type="uml:Property" xmi:id="_id_uml:Property_client_Branch"
-
-                                    name="client"
-
-                                    visibility="public"
-
-                                    aggregation="composite"
-
-                                    type="_id_uml:Class_Client"
-
-                                    association="_id_uml:Association_Clientship">
-
-                        <lowerValue xmi:type="uml:LiteralUnlimitedNatural"
-
-                                    xmi:id="_id_uml:LiteralUnlimitedNatural_random"/>
-
-                        <upperValue xmi:type="uml:LiteralUnlimitedNatural"
-
-                                    xmi:id="_id_uml:LiteralUnlimitedNatural_random"
-
-                                    value="*"/>
-
-                    </ownedAttribute>
-
-                </packagedElement>
+</packagedElement>
 
   
 
