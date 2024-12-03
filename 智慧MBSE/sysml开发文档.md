@@ -163,4 +163,46 @@ value="*"/>
 ```
 # Development
 ## Workflow
-We use langgraph to define a State to 
+We use langgraph to define a State to allow certain key-value pairs (referred to as State) to flow through the graph.
+```python
+class State(TypedDict):
+    input: str
+    entities: str
+    output: str
+    answer: Annotated[str, reduce_answer]
+
+def entities_node(state:State):
+    response = entities_llm.invoke(state)
+    entities = response.content
+    escaped_string = entities.replace("{", "{{").replace("}", "}}")
+    return {
+        "entities": escaped_string
+    }
+
+def model_node(state:State):
+    response = model_llm.invoke(state)
+    return {
+        "output": response.content
+    }
+
+def format_node(state:State):
+    response = format_llm.invoke(state)
+    return {
+        "output": response.content,
+    }
+```
+
+```
+workflow = StateGraph(state_schema=State)
+
+workflow.add_edge(START, "entities_node")
+workflow.add_node("entities_node", entities_node)
+workflow.add_node("model_node", model_node)
+workflow.add_node("format_node", format_node)
+
+workflow.add_edge("entities_node", "model_node")
+workflow.add_edge("model_node", "format_node")
+
+check_point = MemorySaver()
+app = workflow.compile(checkpointer=check_point)
+```
