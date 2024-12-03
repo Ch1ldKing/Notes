@@ -163,7 +163,9 @@ value="*"/>
 ```
 # Development
 ## Workflow
-We use langgraph to define a State to allow certain key-value pairs (referred to as State) to flow through the graph.
+We use langgraph to define a **State** to allow certain key-value pairs to flow through the graph.
+
+Three nodes are defined 
 ```python
 class State(TypedDict):
     input: str
@@ -192,7 +194,7 @@ def format_node(state:State):
     }
 ```
 
-```
+```python
 workflow = StateGraph(state_schema=State)
 
 workflow.add_edge(START, "entities_node")
