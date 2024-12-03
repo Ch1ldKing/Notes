@@ -193,7 +193,7 @@ def format_node(state:State):
         "output": response.content,
     }
 ```
-Then, define a StateGraph, 
+Then, define a StateGraph, arranging the sequence of tasks
 ```python
 workflow = StateGraph(state_schema=State)
 
