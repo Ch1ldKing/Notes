@@ -212,3 +212,20 @@ workflow.add_edge("model_node", "format_node")
 check_point = MemorySaver()
 app = workflow.compile(checkpointer=check_point)
 ```
+### Invoke
+The config help to multi-agent State and 
+```python
+def generate_answer(app,input):
+    config = {"configurable":{"thread_id":"abc23"}}
+    
+    # Streaming
+    # for msg in app.stream(
+    #     {"input":input},config=config,stream_mode='messages'
+    # ):
+    #     if isinstance(msg, AIMessageChunk):
+    #         yield msg.content
+            # print(msg.content)
+
+    response = app.invoke({"input":input},config=config)
+    return response["output"]
+```
