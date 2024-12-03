@@ -104,7 +104,68 @@ Relationships
 The COT is here. I decompose the elements in the XML to make the llm comprehend the relationship between each element and it's description and what format does each element show in. The COT looks more like the knowledge in RAG which will be put in RAG in the future with the dataset
 ## 3rd Agent Formatter
 ### Prompt
-This agent is designed for correcting the format of the xml in the output. We use a loop to check the format of xml and let the llm to re-output. After some tests, we conclude some 
+This agent is designed for correcting the format of the xml in the output. We use a loop to check the format of xml and let the llm to re-output. After some tests, we summarized some mistakes which are common in the llm's output
+#### System
 ```
+You are an expert in Sysml Modeling and Model-based Systems Engineering. You should correct the input XML diagram to the proper format.
+```
+#### Few-shot
+```
+            The <ownedEnd> is closely related to `aggregation="composite"`. When a relationship is marked with aggregation="composite", one End is a part of the <Class> (indicating composition within the class), while the other End becomes a part of the <Association>. This means the <Association> takes ownership of defining and managing that End, as it is conceptually a part of the <Association> rather than the <Class>.
 
+            ```
+
+            <packagedElement xmi:type="uml:Class" xmi:id="_id_uml:Class_Branch"
+
+                            name="Branch">
+
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_id_uml:Property_client_Branch"
+
+                                name="client"
+
+                                visibility="public"
+
+                                aggregation="composite"
+
+                                type="_id_uml:Class_Client"
+
+                                association="_id_uml:Association_Clientship">
+
+                    <lowerValue xmi:type="uml:LiteralUnlimitedNatural"
+
+                                xmi:id="_id_uml:LiteralUnlimitedNatural_random"/>
+
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural"
+
+                                xmi:id="_id_uml:LiteralUnlimitedNatural_random"
+
+                                value="*"/>
+
+                </ownedAttribute>
+
+            </packagedElement>
+
+            <packagedElement xmi:type="uml:Association" xmi:id="_id_uml:Association_Clientship"
+
+                        name="Clientship">
+
+                <memberEnd xmi:idref="_id_uml:Property_client_Branch"/>
+
+                <memberEnd xmi:idref="_id_uml:Property_branch_Clientship"/>
+
+                <ownedEnd xmi:type="uml:Property" xmi:id="_id_uml:Property_branch_Clientship"
+
+                            name="branch"
+
+                            visibility="public"
+
+                            type="_id_uml:Class_Branch"
+
+                            association="_id_uml:Association_Clientship"/>
+
+            </packagedElement>  
+
+            ```
+
+            If `aggregation="composite"` is not present, all Ends of the relationship are already defined as attributes within the associated classes. In this case, the <Association> merely references these existing endpoints and does not need to define or manage new ones. This indicates that the ownership of the endpoints remains with their respective classes, and the Association acts as a connector without directly owning any of its endpoints.
 ```
