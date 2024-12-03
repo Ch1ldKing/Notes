@@ -213,7 +213,7 @@ check_point = MemorySaver()
 app = workflow.compile(checkpointer=check_point)
 ```
 ### Invoke
-The config help to multi-agent State and 
+The config help to keep the state and dependent memory between agents.
 ```python
 def generate_answer(app,input):
     config = {"configurable":{"thread_id":"abc23"}}
@@ -229,3 +229,4 @@ def generate_answer(app,input):
     response = app.invoke({"input":input},config=config)
     return response["output"]
 ```
+### 
