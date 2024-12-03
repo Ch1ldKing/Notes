@@ -229,4 +229,3 @@ def generate_answer(app,input):
     response = app.invoke({"input":input},config=config)
     return response["output"]
 ```
-### 
