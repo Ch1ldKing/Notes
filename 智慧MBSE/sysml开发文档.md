@@ -33,11 +33,7 @@ Relationships
 * Banks have a composite relationship with their branches, indicating that a branch cannot exist without being part of a bank.
 
 * Branches have composite relationships with their clients and managers. This ensures that the existence of these entities is tied to the branch.
-
-* Clients and managers are linked to persons through associations, meaning a person assumes the role of a client or manager depending on the context.
-
-* A branch is connected hierarchically to its bank, and through its composition relationships, it governs clients and managers.
-
+* 
 ## Question
 
 Develop a Sysml Block Definition Diagram with the structure of such a system, with all the elements mentioned above, the relationships between them, and all required integrity constraints.
@@ -78,6 +74,7 @@ ai:
 ...
 ```
 ### Refine
+The dataset used to be too long for llm to understand and memorize. So we only extract the 
 ## 2nd Agent Modelling
 ### Prompt
 
