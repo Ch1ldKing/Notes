@@ -82,29 +82,24 @@ You are an expert in Sysml Modeling, you should create a sysml block difinition 
 It's a framework developed in three parts: question, COT(Chain of Thought) and Answer. 
 ```
 human:
-# The Banks
+# The Banking System
 
 ## Context
 
-Suppose the financial system of a country is composed of banks.
+Suppose a banking system is modeled with key entities such as banks, branches, clients, managers, and persons. These entities interact with one another to form a structured, hierarchical organization.
 
-* Each bank has branches, which may be spread throughout the country, but there may not be more than three branches of the same bank in the same city.
+* Each bank is composed of multiple branches. These branches can be spread across different locations, creating a nationwide network of services.
 
-* The structure of a bank's branches is hierarchical, so that a branch may have subordinate branches (of the same bank), either in the same city or in other cities.
+* A branch serves as the operational unit of a bank. It interacts with clients who are individuals or companies. Each branch is associated with exactly one bank and is managed by a single manager.
 
-* The customers of a branch can be either the individuals or companies that have an account at the branch. Each customer may have one or more accounts in any of the branches of a bank. Each account can have only one account holder, the customer who opens the account.
+* Gender is defined using an enumeration, with possible values being male, female, or other.
 
-* Each branch owns an account, in which it stores its assets.
+Relationships
 
-* Each account has a balance, which must be positive, unless it is a "credit" account.
+* Banks have a composite relationship with their branches, indicating that a branch cannot exist without being part of a bank.
 
-* Credit accounts allow their balance to be negative, with a limit that is established when the account is opened.
-
-* A customer may request a change in this limit from the branch where the account is held, and the branch must request authorization from the branch directly responsible for it (except the head office, at the root of the hierarchy, which can make decisions directly). Changes in the credit limit will be authorized as long as the new limit is lower than the previous one, or if it is only 10% higher than the one the account already had, and the current balance exceeds the new limit (e.g., if the credit limit is 1,000 Euros and you request to increase it to 1,005 Euros with a balance of 1,100 euros on the account, the branch will authorize the change).
-
-* Customer can perform transactions with their accounts (request balance, deposit or withdraw money, and transfer money to another account). hey can also open accounts at any branch. When opening an account, the initial balance is 0. If the account is a credit account, the initial limit is 10 euros.
-
-* The accounts have a maintenance fee of 1% per year. This means that, once a year (on January 1), each branch deducts 1% from the current balance of all its accounts. If the balance is 0 and the account is not a credit account, no money is deducted. In case of credit accounts, if the resulting balance is negative the branch will deduct 1% of the account's credit limit instead. The deducted money from the becomes the property of the branch and is stored in your account.
+* Branches have composite relationships with their clients and managers. This ensures that the existence of these entities is tied to the branch.
 ...
 ```
-The COT is here. I decompose the elements in the XML to make the llm comprehend the relationship between each element and it's description and what format does each element show in. The COT looks more like the knowledge in RAG which will be put in RAG in the future with the dataset 
+The COT is here. I decompose the elements in the XML to make the llm comprehend the relationship between each element and it's description and what format does each element show in. The COT looks more like the knowledge in RAG which will be put in RAG in the future with the dataset
+## 3rd Agent Formatt
