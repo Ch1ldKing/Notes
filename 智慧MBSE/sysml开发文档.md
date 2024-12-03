@@ -33,10 +33,6 @@ Relationships
 * Banks have a composite relationship with their branches, indicating that a branch cannot exist without being part of a bank.
 
 * Branches have composite relationships with their clients and managers. This ensures that the existence of these entities is tied to the branch.
-* 
-## Question
-
-Develop a Sysml Block Definition Diagram with the structure of such a system, with all the elements mentioned above, the relationships between them, and all required integrity constraints.
 ...
 ```
 And the output is in a json format
@@ -74,7 +70,7 @@ ai:
 ...
 ```
 ### Refine
-The dataset used to be too long for llm to understand and memorize. So we only extract the 
+- The dataset used to be too long for llm to understand and memorize. So we only extract the important and unique elements, while ensuring that no contradictions.
 ## 2nd Agent Modelling
 ### Prompt
 
