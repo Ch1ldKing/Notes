@@ -14,3 +14,4 @@ def human_input_node(state):
 
 graph.add_node("human_input", human_input_node)
 ```
+Make user change the state and give it back to the graph.
