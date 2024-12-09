@@ -1,3 +1,4 @@
+# A easy way to imply it
 We could just define a **recall function** to make human interact with the LLM.
 Here is an example
 ```python
