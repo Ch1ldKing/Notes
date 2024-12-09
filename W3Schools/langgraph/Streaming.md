@@ -10,4 +10,4 @@ def generate_answer(app, input):
 	
 		yield msg.content
 ```
-This is used for Streamlit `write_stream`, because it needs a generator function that can be 
+This is used for Streamlit `write_stream`, because it needs a generator function that can be iterable. Commonly, you can use async to imply it.
