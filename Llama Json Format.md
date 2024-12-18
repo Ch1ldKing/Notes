@@ -35,3 +35,36 @@ llm = ChatOllama(model="llama3.1", temperature=0.6, format="json")
 SystemMessage(["... Answer in json format"])
 ```
 3. 使用少样本提示Json格式，下面是一个完整的例子
+```python
+ner_prompt = ChatPromptTemplate.from_messages(
+    [
+        (
+            "system",
+            "You extract economic entities from the article, such as countries, companies, organizations, and individuals, output in JSON format",
+        ),
+        (
+            "human",
+            """
+            Apple Inc., a leading technology company based in the United States, partnered with the United Nations and MIT to launch an initiative aimed at improving digital literacy, with Elon Musk as a key advisor to the project.
+            """,
+
+        ),
+
+        (
+
+            "ai",
+            """
+            ```json
+            {{"entities":["Apple Inc","United States","MIT","United Nations","Elon Musk"]}}
+            ```
+            """,
+        ),
+        ("human", "{content}"),
+        (
+            "ai",
+            "",
+        ),
+    ]
+)
+```
+请注意我加入了` ```json`来明确这个信息。经过测试
