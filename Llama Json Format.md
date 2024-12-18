@@ -67,4 +67,4 @@ ner_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 ```
-请注意我加入了` ```json`来明确这个信息。经过测试
+请注意我加入了` ```json`来明确这个信息。经过测试，此方法稳定且简单
