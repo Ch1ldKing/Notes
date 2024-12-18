@@ -30,4 +30,8 @@ numberlist ::= "["   ws   "]" | "["   ws   string   (","   ws   number)*   ws   
 ```python
 llm = ChatOllama(model="llama3.1", temperature=0.6, format="json")
 ```
-2. system提示词中要加入
+2. system提示词中要加入“输出JSON格式”
+```
+SystemMessage(["... Answer in json format"])
+```
+3. 使用少样本提示Json格式，下面是一个完整的例子
