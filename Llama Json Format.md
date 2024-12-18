@@ -26,4 +26,8 @@ numberlist ::= "["   ws   "]" | "["   ws   string   (","   ws   number)*   ws   
 ## Ollama Json_mode （类OpenAI）
 最早由GPT4o实现，现在Ollama同样支持
 此处使用**langchain-ollama**实现
-
+1. 首先，要开启json_mode，同时注意温度要适当降低，来实现更好的遵循效果
+```python
+llm = ChatOllama(model="llama3.1", temperature=0.6, format="json")
+```
+2. system提示词中要加入
