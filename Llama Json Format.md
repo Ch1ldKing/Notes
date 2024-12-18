@@ -7,7 +7,7 @@ interface answer {
 }
 ```
 2. 然后在这个转换网站中进行生成 https://grammar.intrinsiclabs.ai/
-3. 得到一份模板文件，插入到
+3. 得到一份模板文件，插入到llama.cpp中
 ```
 root ::= answer
 answer ::= "{"   ws   "\"id\":"   ws   number   ","   ws   "\"name\":"   ws   string   "}"
@@ -19,5 +19,11 @@ number ::= [0-9]+   "."?   [0-9]*
 stringlist ::= "["   ws   "]" | "["   ws   string   (","   ws   string)*   ws   "]"
 numberlist ::= "["   ws   "]" | "["   ws   string   (","   ws   number)*   ws   "]"
 ```
-
+4. 可以得到正确的输出结果
+```json
+{"id"：1，"name"："Mercury"}
+```
+## Ollama Json_mode （类OpenAI）
+最早由GPT4o实现，现在Ollama同样支持
+此处使用**langchain-ollama**实现
 
